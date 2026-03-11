@@ -18,13 +18,13 @@ export default function NewsletterSection() {
   };
 
   return (
-    <section id="lead-magnet" className="py-20" style={{ background: "linear-gradient(135deg, #38B54A 0%, #0B5E34 100%)" }}>
+    <section id="lead-magnet" className="py-20" style={{ background: "linear-gradient(135deg, #8B9E1A 0%, #E6B800 100%)" }}>
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
             Stay Ahead in the AI Era
           </h2>
-          <p className="text-lg mb-8" style={{ color: "rgba(255,255,255,0.88)", fontFamily: "'Inter', sans-serif" }}>
+          <p className="text-lg mb-8" style={{ color: "rgba(0,0,0,0.70)", fontFamily: "'Inter', sans-serif" }}>
             Subscribe to the UpskillinTech newsletter for AI insights, workflows, and strategies.
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">

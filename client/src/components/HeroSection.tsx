@@ -1,6 +1,6 @@
 /**
  * HeroSection — UpskillinTech v2
- * Background: linear-gradient #38B54A → #0B5E34
+ * Background: linear-gradient #38B54A → #8B9E1A
  * Text: White | Primary CTA: white bg + green text | Secondary: outline white
  * Font: Poppins headings, Inter body
  */
@@ -12,7 +12,7 @@ export default function HeroSection() {
   return (
     <section
       className="relative overflow-hidden"
-      style={{ background: "linear-gradient(135deg, #38B54A 0%, #0B5E34 100%)" }}
+      style={{ background: "linear-gradient(135deg, #38B54A 0%, #6B9E2A 50%, #8B9E1A 100%)" }}
     >
       {/* Decorative circles */}
       <div
@@ -111,7 +111,7 @@ export default function HeroSection() {
       </div>
 
       {/* Stats bar */}
-      <div style={{ background: "rgba(0,0,0,0.20)", borderTop: "1px solid rgba(255,255,255,0.15)" }}>
+      <div style={{ background: "linear-gradient(90deg, #8B9E1A 0%, #E6B800 100%)", borderTop: "1px solid rgba(255,255,255,0.10)" }}>
         <div className="container py-5">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {[
@@ -121,10 +121,10 @@ export default function HeroSection() {
               { value: "10+", label: "Flagship Courses" },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="text-2xl lg:text-3xl font-bold mb-1" style={{ fontFamily: "'Poppins', sans-serif", color: "#E6B800" }}>
+                <div className="text-2xl lg:text-3xl font-bold mb-1" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
                   {stat.value}
                 </div>
-                <div className="text-sm" style={{ color: "rgba(255,255,255,0.80)", fontFamily: "'Inter', sans-serif" }}>{stat.label}</div>
+                <div className="text-sm font-medium" style={{ color: "rgba(0,0,0,0.70)", fontFamily: "'Inter', sans-serif" }}>{stat.label}</div>
               </div>
             ))}
           </div>

@@ -1,6 +1,6 @@
 /**
  * Navbar — UpskillinTech v2
- * Design: White bg, #1C1C1C nav text, #38B54A CTA button (hover #0B5E34)
+ * Design: White bg, #1C1C1C nav text, #38B54A CTA button (hover #8B9E1A)
  * Font: Poppins
  */
 import { useState, useEffect } from "react";

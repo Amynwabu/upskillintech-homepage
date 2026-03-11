@@ -1,13 +1,13 @@
 /**
  * ResourcesSection — UpskillinTech v2
- * White bg, 4 content cards with deep green (#0B5E34) accent
+ * White bg, 4 content cards with deep green (#8B9E1A) accent
  */
 import { BookOpen, FileText, BarChart2, Video } from "lucide-react";
 
 const resources = [
-  { icon: BookOpen, title: "Blog", desc: "AI insights and practical strategies.", color: "#0B5E34" },
+  { icon: BookOpen, title: "Blog", desc: "AI insights and practical strategies.", color: "#8B9E1A" },
   { icon: FileText, title: "AI Guides", desc: "Deep learning resources.", color: "#38B54A" },
-  { icon: BarChart2, title: "Case Studies", desc: "Real-world AI adoption stories.", color: "#0B5E34" },
+  { icon: BarChart2, title: "Case Studies", desc: "Real-world AI adoption stories.", color: "#8B9E1A" },
   { icon: Video, title: "Webinars", desc: "Live sessions and training.", color: "#38B54A" },
 ];
 

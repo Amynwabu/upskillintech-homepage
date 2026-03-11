@@ -1,7 +1,7 @@
 /**
  * UpskillinTech — Design System v2
  * Philosophy: Modern Professional SaaS — Bold green brand, yellow accents
- * Colors: Primary Green #38B54A | Deep Green #0B5E34 | Accent Yellow #E6B800
+ * Colors: Primary Green #38B54A | Golden Green #8B9E1A | Accent Yellow #E6B800
  *         Dark Text #1C1C1C | Light BG #F7F8FA
  * Typography: Poppins (headings) + Inter (body)
  */
@@ -51,7 +51,7 @@
 
   /* Brand tokens */
   --color-brand-green:       #38B54A;
-  --color-brand-deep-green:  #0B5E34;
+  --color-brand-golden-green: #8B9E1A;
   --color-brand-yellow:      #E6B800;
   --color-brand-dark:        #1C1C1C;
   --color-brand-light-bg:    #F7F8FA;
@@ -80,7 +80,7 @@
   --input: #E5E7EB;
   --ring: #38B54A;
   --chart-1: #38B54A;
-  --chart-2: #0B5E34;
+  --chart-2: #8B9E1A;
   --chart-3: #E6B800;
   --chart-4: #1C1C1C;
   --chart-5: #6B7280;
@@ -153,9 +153,10 @@
     text-decoration: none;
   }
   .btn-primary:hover {
-    background: #0B5E34;
+    background: #E6B800;
+    color: #1C1C1C;
     transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(56,181,74,0.35);
+    box-shadow: 0 6px 20px rgba(230,184,0,0.40);
   }
 
   .btn-primary-white {
@@ -270,7 +271,7 @@
 
   /* ── Hero gradient ── */
   .hero-gradient {
-    background: linear-gradient(135deg, #38B54A 0%, #0B5E34 100%);
+    background: linear-gradient(135deg, #38B54A 0%, #8B9E1A 60%, #E6B800 100%);
   }
 
   /* ── Yellow soft bg ── */

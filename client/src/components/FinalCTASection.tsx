@@ -36,7 +36,7 @@ export default function FinalCTASection() {
 
           <h2 className="mb-6" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(2rem, 4vw, 3rem)", color: "#1C1C1C", lineHeight: 1.15 }}>
             Start Your Journey to Becoming an{" "}
-            <span style={{ color: "#38B54A" }}>
+            <span style={{ background: "linear-gradient(90deg, #8B9E1A, #E6B800)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
               AI-Enabled Professional
             </span>
           </h2>

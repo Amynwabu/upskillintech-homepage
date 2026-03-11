@@ -11,12 +11,12 @@ export default function FounderSection() {
           <div className="flex justify-center">
             <div
               className="rounded-2xl overflow-hidden flex items-center justify-center"
-              style={{ width: 280, height: 320, background: "linear-gradient(135deg, #38B54A18, #0B5E3418)", border: "2px solid #38B54A30" }}
+              style={{ width: 280, height: 320, background: "linear-gradient(135deg, #38B54A18, #E6B80018)", border: "2px solid #E6B80050" }}
             >
               <div className="text-center px-6">
                 <div
                   className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold"
-                  style={{ background: "linear-gradient(135deg, #38B54A, #0B5E34)", fontFamily: "'Poppins', sans-serif" }}
+                  style={{ background: "linear-gradient(135deg, #8B9E1A, #E6B800)", fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}
                 >
                   DA
                 </div>

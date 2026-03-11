@@ -31,7 +31,7 @@ export default function MethodSection() {
                 {/* Circle */}
                 <div
                   className="w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-lg mb-3"
-                  style={{ background: i === 0 ? "#38B54A" : i === steps.length - 1 ? "#0B5E34" : "#38B54A", fontFamily: "'Poppins', sans-serif", boxShadow: "0 4px 16px rgba(56,181,74,0.3)" }}
+                  style={{ background: i === 0 ? "#38B54A" : i === 1 ? "#6B9E2A" : i === 2 ? "#8B9E1A" : "#E6B800", color: i === 3 ? "#1C1C1C" : "#ffffff", fontFamily: "'Poppins', sans-serif", boxShadow: i === 3 ? "0 4px 16px rgba(230,184,0,0.35)" : "0 4px 16px rgba(56,181,74,0.3)" }}
                 >
                   {i + 1}
                 </div>

@@ -34,12 +34,12 @@ export default function CommunitySection() {
           {/* Right: Stats / highlight box */}
           <div
             className="rounded-2xl p-8"
-            style={{ background: "linear-gradient(135deg, #38B54A, #0B5E34)", boxShadow: "0 16px 48px rgba(56,181,74,0.25)" }}
+            style={{ background: "linear-gradient(135deg, #8B9E1A 0%, #E6B800 100%)", boxShadow: "0 16px 48px rgba(139,158,26,0.30)" }}
           >
-            <h3 className="text-2xl font-bold mb-2 text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
               Stay Ahead in the AI Era
             </h3>
-            <p className="text-white mb-6" style={{ opacity: 0.88, fontFamily: "'Inter', sans-serif" }}>
+            <p className="mb-6" style={{ color: "rgba(0,0,0,0.70)", fontFamily: "'Inter', sans-serif" }}>
               Subscribe to the UpskillinTech newsletter for AI insights, workflows, and strategies.
             </p>
             <div className="flex gap-3">

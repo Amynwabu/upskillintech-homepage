@@ -6,7 +6,7 @@ import { Briefcase, BookOpen, Users, Zap } from "lucide-react";
 
 const programs = [
   { icon: Briefcase, title: "AI-Enabled Professional", desc: "Use AI in your daily work.", color: "#38B54A" },
-  { icon: BookOpen, title: "AI Foundations", desc: "Start your AI journey.", color: "#0B5E34" },
+  { icon: BookOpen, title: "AI Foundations", desc: "Start your AI journey.", color: "#8B9E1A" },
   { icon: Users, title: "AI Leadership", desc: "AI for educators, pastors, and leaders.", color: "#38B54A" },
   { icon: Zap, title: "AI Automation & Workflows", desc: "Build AI-powered productivity systems.", color: "#E6B800" },
 ];
