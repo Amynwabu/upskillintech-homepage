@@ -1,8 +1,9 @@
-/* 
- * UpskillinTech Homepage — Design System
- * Philosophy: Modern Professional — Clean Conversion-Focused Landing Page
- * Colors: Teal (#0D9488) to Green (#16A34A) primary, Amber (#D97706) CTAs, Slate (#0F172A) dark sections
- * Typography: Sora (display/headlines) + DM Sans (body)
+/**
+ * UpskillinTech — Design System v2
+ * Philosophy: Modern Professional SaaS — Bold green brand, yellow accents
+ * Colors: Primary Green #38B54A | Deep Green #0B5E34 | Accent Yellow #E6B800
+ *         Dark Text #1C1C1C | Light BG #F7F8FA
+ * Typography: Poppins (headings) + Inter (body)
  */
 
 @import "tailwindcss";
@@ -47,79 +48,73 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  
-  /* Brand Colors */
-  --color-teal-50: oklch(0.97 0.02 185);
-  --color-teal-100: oklch(0.93 0.05 185);
-  --color-teal-500: oklch(0.60 0.12 185);
-  --color-teal-600: oklch(0.53 0.13 185);
-  --color-teal-700: oklch(0.46 0.12 185);
-  --color-brand-teal: oklch(0.55 0.13 185);
-  --color-brand-green: oklch(0.55 0.15 145);
-  --color-brand-amber: oklch(0.70 0.17 60);
-  --color-brand-dark: oklch(0.14 0.02 265);
+
+  /* Brand tokens */
+  --color-brand-green:       #38B54A;
+  --color-brand-deep-green:  #0B5E34;
+  --color-brand-yellow:      #E6B800;
+  --color-brand-dark:        #1C1C1C;
+  --color-brand-light-bg:    #F7F8FA;
+  --color-brand-yellow-bg:   #FFF7D6;
 }
 
 :root {
-  --primary: oklch(0.55 0.13 185);
-  --primary-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.55 0.13 185);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --chart-1: oklch(0.55 0.13 185);
-  --chart-2: oklch(0.55 0.15 145);
-  --chart-3: oklch(0.70 0.17 60);
-  --chart-4: oklch(0.46 0.12 185);
-  --chart-5: oklch(0.40 0.10 185);
+  --primary: #38B54A;
+  --primary-foreground: #ffffff;
   --radius: 0.5rem;
-  --background: oklch(0.99 0.002 240);
-  --foreground: oklch(0.14 0.02 265);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.14 0.02 265);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.14 0.02 265);
-  --secondary: oklch(0.96 0.01 185);
-  --secondary-foreground: oklch(0.30 0.05 185);
-  --muted: oklch(0.96 0.005 240);
-  --muted-foreground: oklch(0.50 0.01 265);
-  --accent: oklch(0.96 0.01 185);
-  --accent-foreground: oklch(0.30 0.05 185);
+  --background: #ffffff;
+  --foreground: #1C1C1C;
+  --card: #ffffff;
+  --card-foreground: #1C1C1C;
+  --popover: #ffffff;
+  --popover-foreground: #1C1C1C;
+  --secondary: #F7F8FA;
+  --secondary-foreground: #1C1C1C;
+  --muted: #F7F8FA;
+  --muted-foreground: #6B7280;
+  --accent: #E6B800;
+  --accent-foreground: #1C1C1C;
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.90 0.005 240);
-  --input: oklch(0.90 0.005 240);
-  --ring: oklch(0.55 0.13 185);
-  --sidebar: oklch(0.99 0.002 240);
-  --sidebar-foreground: oklch(0.14 0.02 265);
-  --sidebar-accent: oklch(0.96 0.01 185);
-  --sidebar-accent-foreground: oklch(0.30 0.05 185);
-  --sidebar-border: oklch(0.90 0.005 240);
-  --sidebar-ring: oklch(0.55 0.13 185);
+  --destructive-foreground: #ffffff;
+  --border: #E5E7EB;
+  --input: #E5E7EB;
+  --ring: #38B54A;
+  --chart-1: #38B54A;
+  --chart-2: #0B5E34;
+  --chart-3: #E6B800;
+  --chart-4: #1C1C1C;
+  --chart-5: #6B7280;
+  --sidebar: #F7F8FA;
+  --sidebar-foreground: #1C1C1C;
+  --sidebar-primary: #38B54A;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #F7F8FA;
+  --sidebar-accent-foreground: #1C1C1C;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #38B54A;
 }
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sora', system-ui, sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
   [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
   a[href],
   select:not(:disabled),
   input[type="checkbox"]:not(:disabled),
   input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
+    cursor: pointer;
   }
 }
 
@@ -131,142 +126,155 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
   .flex {
     min-height: 0;
     min-width: 0;
   }
-
   @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
+    .container { padding-left: 1.5rem; padding-right: 1.5rem; }
   }
-
   @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      max-width: 1280px;
-    }
+    .container { padding-left: 2rem; padding-right: 2rem; max-width: 1280px; }
   }
 
-  /* Brand utility classes */
+  /* ── Buttons ── */
   .btn-primary {
-    background: linear-gradient(135deg, oklch(0.55 0.13 185), oklch(0.55 0.15 145));
-    color: white;
-    font-family: 'Sora', sans-serif;
+    background: #38B54A;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     padding: 0.75rem 1.75rem;
-    border-radius: 0.5rem;
+    border-radius: 0.375rem;
     transition: all 0.2s ease;
     border: none;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
   }
   .btn-primary:hover {
+    background: #0B5E34;
     transform: translateY(-1px);
-    box-shadow: 0 8px 24px oklch(0.55 0.13 185 / 0.35);
+    box-shadow: 0 6px 20px rgba(56,181,74,0.35);
   }
 
-  .btn-amber {
-    background: oklch(0.70 0.17 60);
-    color: oklch(0.14 0.02 265);
-    font-family: 'Sora', sans-serif;
+  .btn-primary-white {
+    background: #ffffff;
+    color: #38B54A;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     padding: 0.75rem 1.75rem;
-    border-radius: 0.5rem;
+    border-radius: 0.375rem;
     transition: all 0.2s ease;
     border: none;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
   }
-  .btn-amber:hover {
-    background: oklch(0.65 0.18 60);
+  .btn-primary-white:hover {
+    background: #f0fdf4;
     transform: translateY(-1px);
-    box-shadow: 0 8px 24px oklch(0.70 0.17 60 / 0.35);
-  }
-
-  .btn-outline {
-    background: transparent;
-    color: oklch(0.55 0.13 185);
-    font-family: 'Sora', sans-serif;
-    font-weight: 600;
-    padding: 0.75rem 1.75rem;
-    border-radius: 0.5rem;
-    transition: all 0.2s ease;
-    border: 2px solid oklch(0.55 0.13 185);
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .btn-outline:hover {
-    background: oklch(0.55 0.13 185 / 0.08);
-    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(255,255,255,0.3);
   }
 
   .btn-outline-white {
     background: transparent;
-    color: white;
-    font-family: 'Sora', sans-serif;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     padding: 0.75rem 1.75rem;
-    border-radius: 0.5rem;
+    border-radius: 0.375rem;
     transition: all 0.2s ease;
-    border: 2px solid rgba(255,255,255,0.6);
+    border: 2px solid rgba(255,255,255,0.7);
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
   }
   .btn-outline-white:hover {
-    background: rgba(255,255,255,0.1);
-    border-color: white;
+    background: rgba(255,255,255,0.12);
+    border-color: #ffffff;
   }
 
+  .btn-outline {
+    background: transparent;
+    color: #38B54A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+    border: 2px solid #38B54A;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+  }
+  .btn-outline:hover {
+    background: #38B54A;
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+
+  .btn-yellow {
+    background: #E6B800;
+    color: #1C1C1C;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+  }
+  .btn-yellow:hover {
+    background: #c9a000;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(230,184,0,0.4);
+  }
+
+  /* ── Section label ── */
   .section-label {
-    font-family: 'Sora', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: oklch(0.55 0.13 185);
+    color: #38B54A;
   }
 
-  .card-teal-border {
-    border-left: 4px solid oklch(0.55 0.13 185);
+  /* ── Program card top border ── */
+  .card-green-top {
+    border-top: 3px solid #38B54A;
   }
 
-  /* Fade-up animation */
+  /* ── Animations ── */
   @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(24px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
   }
-
-  .animate-fade-up {
-    animation: fadeUp 0.6s ease forwards;
-  }
-
-  .animate-fade-up-delay-1 { animation-delay: 0.1s; opacity: 0; animation: fadeUp 0.6s 0.1s ease forwards; }
-  .animate-fade-up-delay-2 { animation-delay: 0.2s; opacity: 0; animation: fadeUp 0.6s 0.2s ease forwards; }
-  .animate-fade-up-delay-3 { animation-delay: 0.3s; opacity: 0; animation: fadeUp 0.6s 0.3s ease forwards; }
-  .animate-fade-up-delay-4 { animation-delay: 0.4s; opacity: 0; animation: fadeUp 0.6s 0.4s ease forwards; }
+  .animate-fade-up { animation: fadeUp 0.6s ease forwards; }
+  .animate-fade-up-delay-1 { opacity: 0; animation: fadeUp 0.6s 0.1s ease forwards; }
+  .animate-fade-up-delay-2 { opacity: 0; animation: fadeUp 0.6s 0.2s ease forwards; }
+  .animate-fade-up-delay-3 { opacity: 0; animation: fadeUp 0.6s 0.3s ease forwards; }
+  .animate-fade-up-delay-4 { opacity: 0; animation: fadeUp 0.6s 0.4s ease forwards; }
 
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-8px); }
+    50%       { transform: translateY(-8px); }
   }
 
-  @keyframes countUp {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  /* ── Hero gradient ── */
+  .hero-gradient {
+    background: linear-gradient(135deg, #38B54A 0%, #0B5E34 100%);
+  }
+
+  /* ── Yellow soft bg ── */
+  .bg-yellow-soft {
+    background: #FFF7D6;
   }
 }

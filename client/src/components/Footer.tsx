@@ -41,12 +41,12 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer id="footer" style={{ background: "#0A0F1A" }}>
+    <footer id="footer" style={{ background: "#1C1C1C" }}>
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl py-16">
         {/* Top: Logo + Description + Social */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 sm:col-span-2">
             <div className="mb-4">
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/upskillintech-logo-transparent-cropped_42de089d.png"
@@ -55,7 +55,7 @@ export default function Footer() {
                 style={{ height: "56px", maxWidth: "180px", filter: "brightness(0) invert(1)" }}
               />
             </div>
-            <p className="text-sm mb-6 leading-relaxed" style={{ color: "#64748B", fontFamily: "'DM Sans', sans-serif" }}>
+            <p className="text-sm mb-6 leading-relaxed" style={{ color: "rgba(255,255,255,0.50)", fontFamily: "'Inter', sans-serif" }}>
               Helping professionals become AI-enabled. Not just AI-aware — AI productive and AI transformed.
             </p>
             {/* Social Links */}
@@ -68,9 +68,9 @@ export default function Footer() {
                     href={s.href}
                     aria-label={s.label}
                     className="w-9 h-9 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110"
-                    style={{ background: "rgba(255,255,255,0.06)", color: "#64748B" }}
-                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#0D9488"; (e.currentTarget as HTMLElement).style.background = "rgba(13,148,136,0.15)"; }}
-                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#64748B"; (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.06)"; }}
+                    style={{ background: "rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.55)" }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#ffffff"; (e.currentTarget as HTMLElement).style.background = "#38B54A"; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.55)"; (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.08)"; }}
                   >
                     <Icon size={16} />
                   </a>
@@ -82,7 +82,7 @@ export default function Footer() {
           {/* Links */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="font-bold text-sm mb-4" style={{ fontFamily: "'Sora', sans-serif", color: "white" }}>
+              <h4 className="font-bold text-sm mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "white" }}>
                 {category}
               </h4>
               <ul className="space-y-2.5">
@@ -91,9 +91,9 @@ export default function Footer() {
                     <a
                       href={link.href}
                       className="text-sm transition-colors duration-200"
-                      style={{ color: "#64748B", fontFamily: "'DM Sans', sans-serif" }}
-                      onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#0D9488"; }}
-                      onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#64748B"; }}
+                      style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'Inter', sans-serif" }}
+                      onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#38B54A"; }}
+                      onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.45)"; }}
                     >
                       {link.label}
                     </a>
@@ -106,7 +106,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4" style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-          <p className="text-sm" style={{ color: "#334155", fontFamily: "'DM Sans', sans-serif" }}>
+          <p className="text-sm" style={{ color: "rgba(255,255,255,0.35)", fontFamily: "'Inter', sans-serif" }}>
             © {new Date().getFullYear()} UpskillinTech. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
@@ -115,9 +115,9 @@ export default function Footer() {
                 key={item}
                 href="#"
                 className="text-xs transition-colors duration-200"
-                style={{ color: "#334155", fontFamily: "'DM Sans', sans-serif" }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#0D9488"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#334155"; }}
+                style={{ color: "rgba(255,255,255,0.30)", fontFamily: "'Inter', sans-serif" }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#38B54A"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.30)"; }}
               >
                 {item}
               </a>
