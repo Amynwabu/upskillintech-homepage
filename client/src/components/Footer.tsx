@@ -47,17 +47,13 @@ export default function Footer() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-lg flex items-center justify-center" style={{ background: "linear-gradient(135deg, #0D9488, #16A34A)" }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" fill="white" opacity="0.9"/>
-                  <path d="M2 17l10 5 10-5" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M2 12l10 5 10-5" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <span style={{ fontFamily: "'Sora', sans-serif", fontWeight: 700, fontSize: "1.1rem", color: "white" }}>
-                Upskill<span style={{ color: "#0D9488" }}>in</span>Tech
-              </span>
+            <div className="mb-4">
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/upskillintech-logo-official_bc57cbb5.png"
+                alt="UpskillinTech"
+                className="h-10 w-auto object-contain"
+                style={{ height: "80px", maxWidth: "240px", filter: "brightness(0) invert(1)" }}
+              />
             </div>
             <p className="text-sm mb-6 leading-relaxed" style={{ color: "#64748B", fontFamily: "'DM Sans', sans-serif" }}>
               Helping professionals become AI-enabled. Not just AI-aware — AI productive and AI transformed.
