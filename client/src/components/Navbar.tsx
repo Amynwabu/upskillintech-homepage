@@ -37,10 +37,10 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#" className="flex items-center group">
             <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/upskillintech-logo-official_bc57cbb5.png"
+              src="https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/upskillintech-logo-transparent-cropped_42de089d.png"
               alt="UpskillinTech"
               className="w-auto object-contain"
-              style={{ height: "80px", maxWidth: "240px" }}
+              style={{ height: "56px", maxWidth: "180px" }}
             />
           </a>
 

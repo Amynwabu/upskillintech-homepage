@@ -49,10 +49,10 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="mb-4">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/upskillintech-logo-official_bc57cbb5.png"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/upskillintech-logo-transparent-cropped_42de089d.png"
                 alt="UpskillinTech"
                 className="h-10 w-auto object-contain"
-                style={{ height: "80px", maxWidth: "240px", filter: "brightness(0) invert(1)" }}
+                style={{ height: "56px", maxWidth: "180px", filter: "brightness(0) invert(1)" }}
               />
             </div>
             <p className="text-sm mb-6 leading-relaxed" style={{ color: "#64748B", fontFamily: "'DM Sans', sans-serif" }}>
