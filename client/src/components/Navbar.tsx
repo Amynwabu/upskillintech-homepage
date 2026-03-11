@@ -12,7 +12,7 @@ const navLinks = [
   { label: "Programs", href: "#programs" },
   { label: "Enterprise", href: "#audience" },
   { label: "Community", href: "#ecosystem" },
-  { label: "Resources", href: "#lead-magnet" },
+  { label: "Resources", href: "/resources" },
   { label: "About", href: "#footer" },
 ];
 
