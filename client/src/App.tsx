@@ -11,6 +11,7 @@ import AIGuides from "./pages/AIGuides";
 import CaseStudies from "./pages/CaseStudies";
 import Webinars from "./pages/Webinars";
 import WorkflowsPage from "./pages/Workflows";
+import About from "./pages/About";
 
 
 function Router() {
@@ -23,6 +24,7 @@ function Router() {
       <Route path={"/resources/case-studies"} component={CaseStudies} />
       <Route path={"/resources/webinars"} component={Webinars} />
       <Route path={"/resources/workflows"} component={WorkflowsPage} />
+      <Route path={"/about"} component={About} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

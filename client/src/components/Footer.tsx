@@ -26,7 +26,7 @@ const footerLinks = {
     { label: "AI Workflow Library", href: "/resources/workflows" },
   ],
   About: [
-    { label: "About UpskillinTech", href: "#footer" },
+    { label: "About UpskillinTech", href: "/about" },
     { label: "Our Approach", href: "#solution" },
     { label: "Contact Us", href: "#" },
     { label: "Careers", href: "#" },

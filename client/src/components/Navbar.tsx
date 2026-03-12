@@ -22,7 +22,7 @@ const navLinks = [
   { label: "Programs", href: "/#programs" },
   { label: "Enterprise", href: "/#enterprise" },
   { label: "Community", href: "/#community" },
-  { label: "About", href: "/#footer" },
+  { label: "About", href: "/about" },
 ];
 
 export default function Navbar() {
