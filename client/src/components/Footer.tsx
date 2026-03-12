@@ -28,7 +28,7 @@ const footerLinks = {
   About: [
     { label: "About UpskillinTech", href: "/about" },
     { label: "Our Approach", href: "#solution" },
-    { label: "Contact Us", href: "#" },
+    { label: "Contact Us", href: "/contact" },
     { label: "Careers", href: "#" },
   ],
 };

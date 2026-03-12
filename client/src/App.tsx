@@ -13,6 +13,7 @@ import Webinars from "./pages/Webinars";
 import WorkflowsPage from "./pages/Workflows";
 import About from "./pages/About";
 import Enterprise from "./pages/Enterprise";
+import Contact from "./pages/Contact";
 
 
 function Router() {
@@ -27,6 +28,7 @@ function Router() {
       <Route path={"/resources/workflows"} component={WorkflowsPage} />
       <Route path={"/about"} component={About} />
       <Route path={"/enterprise"} component={Enterprise} />
+      <Route path={"/contact"} component={Contact} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
