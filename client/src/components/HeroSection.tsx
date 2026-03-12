@@ -12,16 +12,16 @@ export default function HeroSection() {
   return (
     <section
       className="relative overflow-hidden"
-      style={{ background: "linear-gradient(135deg, #5EC96A 0%, #7BBF2A 50%, #A8C038 100%)" }}
+      style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #f7fef7 40%, #fffef0 100%)" }}
     >
       {/* Decorative circles */}
       <div
         className="absolute top-[-80px] right-[-80px] rounded-full pointer-events-none"
-        style={{ width: 400, height: 400, background: "rgba(230,184,0,0.12)" }}
+        style={{ width: 400, height: 400, background: "rgba(56,181,74,0.07)" }}
       />
       <div
         className="absolute bottom-[-60px] left-[-60px] rounded-full pointer-events-none"
-        style={{ width: 280, height: 280, background: "rgba(255,255,255,0.07)" }}
+        style={{ width: 280, height: 280, background: "rgba(230,184,0,0.08)" }}
       />
 
       <div className="container relative z-10">
@@ -30,24 +30,24 @@ export default function HeroSection() {
           <div className="animate-fade-up">
             <h1
               className="text-4xl lg:text-5xl font-bold leading-tight mb-6"
-              style={{ fontFamily: "'Poppins', sans-serif", color: "#ffffff" }}
+              style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}
             >
               Become an AI-Enabled Professional
             </h1>
-            <p className="text-lg mb-3 leading-relaxed" style={{ color: "rgba(255,255,255,0.90)", fontFamily: "'Inter', sans-serif" }}>
+            <p className="text-lg mb-3 leading-relaxed" style={{ color: "#444", fontFamily: "'Inter', sans-serif" }}>
               Learn how to integrate AI into your daily work, decision-making, and workflows.
             </p>
-            <p className="text-lg mb-8 leading-relaxed" style={{ color: "rgba(255,255,255,0.90)", fontFamily: "'Inter', sans-serif" }}>
+            <p className="text-lg mb-8 leading-relaxed" style={{ color: "#444", fontFamily: "'Inter', sans-serif" }}>
               Save hours every week and stay ahead in an AI-powered world.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 mb-10">
-              <a href="#programs" className="btn-primary-white">
+              <a href="#programs" className="btn-primary">
                 <ArrowRight size={18} />
                 Join the AI-Enabled Professional Program
               </a>
-              <a href="#lead-magnet" className="btn-outline-white">
+              <a href="#lead-magnet" className="btn-outline">
                 <Download size={18} />
                 Download Free AI Productivity Guide
               </a>
@@ -61,9 +61,9 @@ export default function HeroSection() {
                     className="text-sm font-semibold px-3 py-1 rounded-full"
                     style={{
                       fontFamily: "'Poppins', sans-serif",
-                      background: "rgba(255,255,255,0.18)",
-                      color: "#ffffff",
-                      border: "1px solid rgba(255,255,255,0.35)",
+                      background: "rgba(56,181,74,0.10)",
+                      color: "#1C1C1C",
+                      border: "1px solid rgba(56,181,74,0.25)",
                     }}
                   >
                     {step}

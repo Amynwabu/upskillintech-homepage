@@ -163,17 +163,17 @@ export default function WorkflowsPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative overflow-hidden pt-16" style={{ background: "linear-gradient(135deg, #5EC96A 0%, #7BBF2A 50%, #A8C038 100%)" }}>
+      <section className="relative overflow-hidden pt-16" style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #f7fef7 40%, #fffef0 100%)" }}>
         <div className="container relative z-10 py-20">
           <div className="max-w-2xl">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4" style={{ background: "rgba(255,255,255,0.20)", color: "#fff", border: "1px solid rgba(255,255,255,0.35)" }}>Workflow Library</span>
-            <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
+            <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4" style={{ background: "rgba(56,181,74,0.10)", color: "#1C1C1C", border: "1px solid rgba(255,255,255,0.35)" }}>Workflow Library</span>
+            <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
               AI Workflows That Work in the Real World
             </h1>
-            <p className="text-lg mb-6" style={{ color: "rgba(255,255,255,0.90)" }}>
+            <p className="text-lg mb-6" style={{ color: "#555" }}>
               Step-by-step AI workflows used by UpskillinTech graduates across meetings, research, content creation, and leadership. Each workflow includes the exact prompts to use.
             </p>
-            <div className="flex items-center gap-4 text-sm" style={{ color: "rgba(255,255,255,0.80)" }}>
+            <div className="flex items-center gap-4 text-sm" style={{ color: "#555" }}>
               <span className="flex items-center gap-1"><Zap size={15} /> 6 Workflows</span>
               <span>·</span>
               <span className="flex items-center gap-1"><Copy size={15} /> Copy-Paste Prompts</span>

@@ -133,7 +133,7 @@ export default function Contact() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section
         className="relative pt-24 pb-16 overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #38B54A 0%, #5EC96A 40%, #8B9E1A 75%, #A8C038 100%)" }}
+        style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #f7fef7 40%, #fffef0 100%)" }}
       >
         {/* Decorative blobs */}
         <div className="absolute top-8 right-16 w-56 h-56 rounded-full opacity-10"
@@ -141,7 +141,7 @@ export default function Contact() {
         <div className="absolute bottom-4 left-12 w-40 h-40 rounded-full opacity-10"
           style={{ background: "radial-gradient(circle, #E6B800 0%, transparent 70%)" }} />
 
-        <div className="max-w-4xl mx-auto px-4 lg:px-8 text-center text-white relative z-10">
+        <div className="max-w-4xl mx-auto px-4 lg:px-8 text-center text-gray-900 relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-widest"
             style={{ background: "rgba(255,255,255,0.2)" }}>
             <MessageSquare size={12} /> Get in Touch
@@ -177,8 +177,8 @@ export default function Contact() {
               { label: "Institutions", desc: "Interested in collaboration" },
               { label: "Event Organisers", desc: "Inviting speakers" },
             ].map((item, i) => (
-              <div key={i} className="rounded-xl px-4 py-3 text-center text-white"
-                style={{ background: "rgba(255,255,255,0.15)" }}>
+              <div key={i} className="rounded-xl px-4 py-3 text-center text-gray-900"
+                style={{ background: "rgba(56,181,74,0.10)" }}>
                 <p className="font-poppins font-semibold text-sm">{item.label}</p>
                 <p className="text-xs opacity-80 mt-0.5">{item.desc}</p>
               </div>

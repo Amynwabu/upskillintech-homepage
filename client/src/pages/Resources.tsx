@@ -108,24 +108,24 @@ export default function Resources() {
       {/* ── 1. HERO ── */}
       <section
         className="relative overflow-hidden pt-16"
-        style={{ background: "linear-gradient(135deg, #5EC96A 0%, #7BBF2A 50%, #A8C038 100%)" }}
+        style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #f7fef7 40%, #fffef0 100%)" }}
       >
         <div className="absolute top-[-80px] right-[-80px] rounded-full pointer-events-none" style={{ width: 400, height: 400, background: "rgba(230,184,0,0.10)" }} />
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center py-20 lg:py-28">
             <div>
-              <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4" style={{ background: "rgba(255,255,255,0.20)", color: "#fff", border: "1px solid rgba(255,255,255,0.35)" }}>Resource Hub</span>
-              <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
+              <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4" style={{ background: "rgba(56,181,74,0.10)", color: "#1C1C1C", border: "1px solid rgba(255,255,255,0.35)" }}>Resource Hub</span>
+              <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
                 Insights, Guides, and Practical Tools for the AI-Enabled World
               </h1>
-              <p className="text-lg mb-8 leading-relaxed" style={{ color: "rgba(255,255,255,0.90)" }}>
+              <p className="text-lg mb-8 leading-relaxed" style={{ color: "#555" }}>
                 Explore articles, guides, workflows, and case studies that help professionals, leaders, and organisations integrate AI into real work and decision-making.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/resources/ai-guides" className="inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-lg transition-all" style={{ background: "#fff", color: "#38B54A", fontFamily: "'Poppins', sans-serif" }}>
                   <BookOpen size={18} /> Explore AI Guides
                 </Link>
-                <Link href="/resources/blog" className="inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-lg border-2 transition-all" style={{ borderColor: "#fff", color: "#fff", fontFamily: "'Poppins', sans-serif" }}>
+                <Link href="/resources/blog" className="inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-lg border-2 transition-all" style={{ borderColor: "#fff", color: "#1C1C1C", fontFamily: "'Poppins', sans-serif" }}>
                   <ArrowRight size={18} /> Browse Blog
                 </Link>
               </div>

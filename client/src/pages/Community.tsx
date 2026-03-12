@@ -157,14 +157,14 @@ export default function Community() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section
         className="relative pt-24 pb-16 overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #38B54A 0%, #5EC96A 40%, #8B9E1A 75%, #A8C038 100%)" }}
+        style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #f7fef7 40%, #fffef0 100%)" }}
       >
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-10"
           style={{ background: "radial-gradient(circle, #fff 0%, transparent 70%)", transform: "translate(30%, -30%)" }} />
         <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full opacity-10"
           style={{ background: "radial-gradient(circle, #E6B800 0%, transparent 70%)", transform: "translate(-30%, 30%)" }} />
 
-        <div className="max-w-4xl mx-auto px-4 lg:px-8 text-center text-white relative z-10">
+        <div className="max-w-4xl mx-auto px-4 lg:px-8 text-center text-gray-900 relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-widest"
             style={{ background: "rgba(255,255,255,0.2)" }}>
             <Users size={12} /> UpskillinTech Community
@@ -189,9 +189,9 @@ export default function Community() {
               Join the Community <ArrowRight size={16} />
             </a>
             <a href="#masterclasses"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded font-semibold text-sm border-2 border-white text-white transition-all"
-              onMouseEnter={e => { e.currentTarget.style.background = "#fff"; e.currentTarget.style.color = "#38B54A"; }}
-              onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#fff"; }}>
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded font-semibold text-sm border-2 border-green-600 text-gray-900 transition-all"
+              onMouseEnter={e => { e.currentTarget.style.background = "#f0fdf4"; e.currentTarget.style.color = "#38B54A"; }}
+              onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#38B54A"; }}>
               See Masterclasses
             </a>
           </div>
@@ -206,8 +206,8 @@ export default function Community() {
               { value: "12+", label: "Countries Represented" },
               { value: "Free", label: "To Join" },
             ].map((stat, i) => (
-              <div key={i} className="rounded-xl px-4 py-3 text-center text-white"
-                style={{ background: "rgba(255,255,255,0.15)" }}>
+              <div key={i} className="rounded-xl px-4 py-3 text-center text-gray-900"
+                style={{ background: "rgba(56,181,74,0.10)" }}>
                 <p className="font-poppins font-bold text-xl" style={{ color: "#E6B800" }}>{stat.value}</p>
                 <p className="text-xs opacity-80 mt-0.5">{stat.label}</p>
               </div>

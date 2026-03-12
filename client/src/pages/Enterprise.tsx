@@ -280,7 +280,7 @@ export default function Enterprise() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section
         className="relative pt-24 pb-0 overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #38B54A 0%, #5EC96A 40%, #8B9E1A 75%, #A8C038 100%)" }}
+        style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #f7fef7 40%, #fffef0 100%)" }}
       >
         {/* Decorative circles */}
         <div className="absolute top-10 right-10 w-64 h-64 rounded-full opacity-10"
@@ -290,9 +290,9 @@ export default function Enterprise() {
 
         <div className="max-w-6xl mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-12 items-center pb-0">
           {/* Left */}
-          <div className="text-white py-16">
+          <div className="text-gray-900 py-16">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-widest"
-              style={{ background: "rgba(255,255,255,0.2)", color: "#fff" }}>
+              style={{ background: "rgba(255,255,255,0.2)", color: "#1C1C1C" }}>
               Enterprise AI Solutions
             </div>
             <h1 className="font-poppins font-bold text-4xl lg:text-5xl leading-tight mb-6">
@@ -320,10 +320,10 @@ export default function Enterprise() {
               </a>
               <a
                 href="#services"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded font-semibold text-sm border-2 border-white text-white transition-all hover:bg-white"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded font-semibold text-sm border-2 border-green-600 text-gray-900 transition-all hover:bg-white"
                 style={{}}
-                onMouseEnter={e => { e.currentTarget.style.color = "#38B54A"; e.currentTarget.style.background = "#fff"; }}
-                onMouseLeave={e => { e.currentTarget.style.color = "#fff"; e.currentTarget.style.background = "transparent"; }}
+                onMouseEnter={e => { e.currentTarget.style.color = "#38B54A"; e.currentTarget.style.background = "#f0fdf4"; }}
+                onMouseLeave={e => { e.currentTarget.style.color = "#38B54A"; e.currentTarget.style.background = "transparent"; }}
               >
                 Explore Services
               </a>
@@ -363,7 +363,7 @@ export default function Enterprise() {
               { value: `${satisfactionCount}%`, label: "Satisfaction Rate" },
               { value: `${hoursCount}+`, label: "Hours Saved Per Week" },
             ].map((stat, i) => (
-              <div key={i} className="py-5 px-6 text-center border-r border-white/20 last:border-0">
+              <div key={i} className="py-5 px-6 text-center border-r border-green-600/20 last:border-0">
                 <p className="font-poppins font-bold text-2xl lg:text-3xl" style={{ color: "#1C1C1C" }}>{stat.value}</p>
                 <p className="text-xs font-medium mt-1" style={{ color: "#2a2a2a" }}>{stat.label}</p>
               </div>

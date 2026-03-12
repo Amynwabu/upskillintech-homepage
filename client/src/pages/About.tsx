@@ -93,24 +93,24 @@ export default function About() {
       <Navbar />
 
       {/* ── 1. HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden pt-16" style={{ background: "linear-gradient(135deg, #5EC96A 0%, #7BBF2A 50%, #A8C038 100%)" }}>
+      <section className="relative overflow-hidden pt-16" style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #f7fef7 40%, #fffef0 100%)" }}>
         {/* Background pattern */}
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, #fff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #fff 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
         <div className="container relative z-10 py-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5" style={{ background: "rgba(255,255,255,0.20)", color: "#fff", border: "1px solid rgba(255,255,255,0.35)" }}>About UpskillinTech</span>
-              <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
+              <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5" style={{ background: "rgba(56,181,74,0.10)", color: "#1C1C1C", border: "1px solid rgba(255,255,255,0.35)" }}>About UpskillinTech</span>
+              <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
                 Enabling People and Organizations to Thrive in the Age of AI
               </h1>
-              <p className="text-lg mb-8 leading-relaxed" style={{ color: "rgba(255,255,255,0.90)" }}>
+              <p className="text-lg mb-8 leading-relaxed" style={{ color: "#555" }}>
                 UpskillinTech helps professionals, leaders, and organisations integrate AI into real work, decision-making, and productivity systems — not just as a concept, but as a daily practice.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/#programs" className="font-bold px-6 py-3 rounded-lg flex items-center gap-2 text-sm" style={{ background: "#1C1C1C", color: "#fff", fontFamily: "'Poppins', sans-serif", textDecoration: "none" }}>
+                <Link href="/#programs" className="font-bold px-6 py-3 rounded-lg flex items-center gap-2 text-sm" style={{ background: "#1C1C1C", color: "#1C1C1C", fontFamily: "'Poppins', sans-serif", textDecoration: "none" }}>
                   <ArrowRight size={16} /> Explore Programs
                 </Link>
-                <Link href="/#community" className="font-bold px-6 py-3 rounded-lg flex items-center gap-2 text-sm" style={{ background: "rgba(255,255,255,0.15)", color: "#fff", border: "1.5px solid rgba(255,255,255,0.40)", fontFamily: "'Poppins', sans-serif", textDecoration: "none" }}>
+                <Link href="/#community" className="font-bold px-6 py-3 rounded-lg flex items-center gap-2 text-sm" style={{ background: "rgba(56,181,74,0.10)", color: "#1C1C1C", border: "1.5px solid rgba(255,255,255,0.40)", fontFamily: "'Poppins', sans-serif", textDecoration: "none" }}>
                   <Users size={16} /> Join Community
                 </Link>
               </div>
@@ -120,9 +120,9 @@ export default function About() {
               <div className="relative w-80 h-80">
                 {/* Central circle */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-28 h-28 rounded-full flex flex-col items-center justify-center text-center" style={{ background: "rgba(255,255,255,0.20)", border: "2px solid rgba(255,255,255,0.40)" }}>
-                    <Brain size={32} style={{ color: "#fff" }} />
-                    <span className="text-xs font-bold mt-1" style={{ color: "#fff", fontFamily: "'Poppins', sans-serif" }}>AI-Enabled</span>
+                  <div className="w-28 h-28 rounded-full flex flex-col items-center justify-center text-center" style={{ background: "rgba(56,181,74,0.10)", border: "2px solid rgba(255,255,255,0.40)" }}>
+                    <Brain size={32} style={{ color: "#1C1C1C" }} />
+                    <span className="text-xs font-bold mt-1" style={{ color: "#1C1C1C", fontFamily: "'Poppins', sans-serif" }}>AI-Enabled</span>
                   </div>
                 </div>
                 {/* Orbit nodes */}
@@ -138,8 +138,8 @@ export default function About() {
                   return (
                     <div key={label} className="absolute flex flex-col items-center" style={{ left: `${x}%`, top: `${y}%`, transform: "translate(-50%, -50%)" }}>
                       <div className="w-14 h-14 rounded-full flex flex-col items-center justify-center" style={{ background: "rgba(255,255,255,0.25)", border: "2px solid rgba(255,255,255,0.50)" }}>
-                        <div style={{ color: "#fff" }}>{icon}</div>
-                        <span className="text-xs font-bold" style={{ color: "#fff", fontFamily: "'Poppins', sans-serif" }}>{label}</span>
+                        <div style={{ color: "#1C1C1C" }}>{icon}</div>
+                        <span className="text-xs font-bold" style={{ color: "#1C1C1C", fontFamily: "'Poppins', sans-serif" }}>{label}</span>
                       </div>
                     </div>
                   );
@@ -376,7 +376,7 @@ export default function About() {
       </section>
 
       {/* ── 7. IMPACT ───────────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "linear-gradient(135deg, #5EC96A 0%, #7BBF2A 50%, #A8C038 100%)" }}>
+      <section className="py-20" style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #f7fef7 40%, #fffef0 100%)" }}>
         <div className="container">
           <div className="text-center mb-14">
             <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4" style={{ background: "rgba(255,255,255,0.20)", color: "#fff", border: "1px solid rgba(255,255,255,0.35)" }}>Our Impact</span>
