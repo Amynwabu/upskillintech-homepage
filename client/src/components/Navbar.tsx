@@ -20,7 +20,7 @@ const RESOURCE_LINKS = [
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Programs", href: "/#programs" },
-  { label: "Enterprise", href: "/#enterprise" },
+  { label: "Enterprise", href: "/enterprise" },
   { label: "Community", href: "/#community" },
   { label: "About", href: "/about" },
 ];

@@ -10,7 +10,7 @@ const footerLinks = {
     { label: "AI-Enabled Professional", href: "#programs" },
     { label: "AI for Business", href: "#programs" },
     { label: "AI for Education", href: "#programs" },
-    { label: "Enterprise Training", href: "#audience" },
+    { label: "Enterprise Training", href: "/enterprise" },
   ],
   Community: [
     { label: "Join Community", href: "#ecosystem" },
