@@ -1,10 +1,9 @@
 /**
- * FinalCTASection — "Start Your Journey to Becoming an AI-Enabled Professional"
- * Design: Bold teal-to-green gradient background, dual CTAs
+ * FinalCTASection — UpskillinTech v3
+ * Bold green gradient background, large headline, dual CTAs, trust indicators
  */
-
 import { useRef, useEffect, useState } from "react";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Users, Star, Clock } from "lucide-react";
 
 function useInView(threshold = 0.2) {
   const ref = useRef<HTMLDivElement>(null);
@@ -17,57 +16,95 @@ function useInView(threshold = 0.2) {
   return { ref, inView };
 }
 
+const trustItems = [
+  { icon: Users, label: "1,000+ Professionals Trained" },
+  { icon: Star, label: "95% Success Rate" },
+  { icon: Clock, label: "Practical From Day One" },
+];
+
 export default function FinalCTASection() {
   const { ref, inView } = useInView();
 
   return (
-    <section id="final-cta" className="py-24 lg:py-32 relative overflow-hidden" style={{ background: "#F7F8FA" }}>
+    <section
+      id="final-cta"
+      className="relative overflow-hidden"
+      style={{
+        background: "linear-gradient(135deg, #38B54A 0%, #2d9e3e 40%, #1a7a2e 100%)",
+        padding: "7rem 0",
+      }}
+    >
+      {/* Decorative blobs */}
+      <div className="absolute top-[-80px] right-[-80px] rounded-full pointer-events-none" style={{ width: 400, height: 400, background: "rgba(255,255,255,0.06)" }} />
+      <div className="absolute bottom-[-60px] left-[-60px] rounded-full pointer-events-none" style={{ width: 300, height: 300, background: "rgba(230,184,0,0.10)" }} />
 
-
-      <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center relative z-10" ref={ref}>
-        <div className={`transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <div className="container relative z-10" ref={ref}>
+        <div
+          className={`max-w-4xl mx-auto text-center transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        >
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8" style={{ background: "rgba(56,181,74,0.12)", border: "1px solid rgba(56,181,74,0.3)" }}>
-            <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "#38B54A" }} />
-            <span className="text-sm font-semibold" style={{ color: "#38B54A", fontFamily: "'Poppins', sans-serif" }}>
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full mb-8" style={{ background: "rgba(255,255,255,0.18)" }}>
+            <span className="w-2.5 h-2.5 rounded-full animate-pulse" style={{ background: "#E6B800" }} />
+            <span className="font-semibold" style={{ color: "#ffffff", fontFamily: "'Poppins', sans-serif", fontSize: "0.9rem" }}>
               Next Cohort Enrolling Now
             </span>
           </div>
 
-          <h2 className="mb-6" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 800, fontSize: "clamp(2rem, 4vw, 3rem)", color: "#1C1C1C", lineHeight: 1.15 }}>
+          <h2 className="mb-6" style={{ color: "#ffffff", fontWeight: 800, lineHeight: 1.15 }}>
             Start Your Journey to Becoming an{" "}
-            <span style={{ background: "linear-gradient(90deg, #8B9E1A, #E6B800)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-              AI-Enabled Professional
-            </span>
+            <span style={{ color: "#E6B800" }}>AI-Enabled Professional</span>
           </h2>
 
-          <p className="text-xl mb-10" style={{ color: "#6B7280", fontFamily: "'Inter', sans-serif", lineHeight: 1.7, maxWidth: "600px", margin: "0 auto 2.5rem" }}>
-            Join the next cohort and begin integrating AI into your daily work. Save hours every week, stay ahead, and transform how you work.
+          <p className="mb-12 max-w-2xl mx-auto" style={{ fontSize: "1.2rem", color: "rgba(255,255,255,0.85)", lineHeight: 1.75 }}>
+            Join the next cohort and begin integrating AI into your daily work. Save hours every week, stay ahead of the curve, and transform how you work — starting today.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#programs" className="btn-primary flex items-center gap-2" style={{ fontSize: "1rem", padding: "0.875rem 2rem" }}>
-              Explore Programs <ArrowRight size={16} />
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mb-12">
+            <a
+              href="/programs"
+              className="flex items-center gap-2 font-bold rounded-xl px-8 py-4 transition-all duration-200"
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+                fontSize: "1.1rem",
+                background: "#E6B800",
+                color: "#111827",
+                textDecoration: "none",
+                boxShadow: "0 8px 24px rgba(230,184,0,0.40)",
+              }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(-3px)"; (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 12px 32px rgba(230,184,0,0.55)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 8px 24px rgba(230,184,0,0.40)"; }}
+            >
+              Explore Programs <ArrowRight size={20} />
             </a>
-            <a href="#community" className="btn-outline flex items-center gap-2" style={{ fontSize: "1rem", padding: "0.875rem 2rem" }}>
-              Join Community
+            <a
+              href="/community"
+              className="flex items-center gap-2 font-bold rounded-xl px-8 py-4 transition-all duration-200"
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+                fontSize: "1.1rem",
+                background: "transparent",
+                color: "#ffffff",
+                textDecoration: "none",
+                border: "2px solid rgba(255,255,255,0.70)",
+              }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "rgba(255,255,255,0.15)"; (e.currentTarget as HTMLAnchorElement).style.borderColor = "#ffffff"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "transparent"; (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(255,255,255,0.70)"; }}
+            >
+              Join the Community
             </a>
           </div>
 
           {/* Trust indicators */}
-          <div className="flex flex-wrap items-center justify-center gap-6 mt-10">
-            {[
-              "No prior AI experience needed",
-              "Practical from day one",
-              "Join 1,000+ professionals",
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-2 text-sm" style={{ color: "#6B7280", fontFamily: "'Inter', sans-serif" }}>
-                <div className="w-4 h-4 rounded-full flex items-center justify-center" style={{ background: "rgba(56,181,74,0.15)" }}>
-                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
-                    <path d="M1 4l2 2 4-4" stroke="#38B54A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
+          <div className="flex flex-wrap items-center justify-center gap-8">
+            {trustItems.map(({ icon: Icon, label }) => (
+              <div key={label} className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: "rgba(255,255,255,0.18)" }}>
+                  <Icon size={18} style={{ color: "#E6B800" }} />
                 </div>
-                {item}
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.975rem", fontWeight: 500, color: "rgba(255,255,255,0.90)" }}>
+                  {label}
+                </span>
               </div>
             ))}
           </div>

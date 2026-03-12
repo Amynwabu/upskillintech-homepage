@@ -378,7 +378,7 @@ export default function Enterprise() {
           <div className="text-center mb-14">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "#f0faf0", color: "#38B54A" }}>Enterprise Services</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4" style={{ color: "#1C1C1C" }}>
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4" style={{ color: "#1C1C1C" }}>
               What We Offer Organisations
             </h2>
             <p className="text-base max-w-2xl mx-auto" style={{ color: "#555" }}>
@@ -448,12 +448,12 @@ export default function Enterprise() {
       </section>
 
       {/* ── Industries ───────────────────────────────────────────────────── */}
-      <section id="industries" className="py-20" style={{ background: "#f8faf8" }}>
+      <section id="industries" className="section-py" style={{ background: "#f8faf8" }}>
         <div className="max-w-6xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-14">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "#f0faf0", color: "#38B54A" }}>Industries We Serve</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4" style={{ color: "#1C1C1C" }}>
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4" style={{ color: "#1C1C1C" }}>
               Working Across Sectors
             </h2>
             <p className="text-base max-w-2xl mx-auto" style={{ color: "#555" }}>
@@ -497,7 +497,7 @@ export default function Enterprise() {
           <div className="text-center mb-14">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "#f0faf0", color: "#38B54A" }}>How We Work</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4" style={{ color: "#1C1C1C" }}>
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4" style={{ color: "#1C1C1C" }}>
               How We Work With Organisations
             </h2>
             <p className="text-base max-w-2xl mx-auto" style={{ color: "#555" }}>
@@ -546,12 +546,12 @@ export default function Enterprise() {
       </section>
 
       {/* ── Case Studies ─────────────────────────────────────────────────── */}
-      <section id="case-studies" className="py-20" style={{ background: "#1C1C1C" }}>
+      <section id="case-studies" className="section-py" style={{ background: "#1C1C1C" }}>
         <div className="max-w-6xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-14">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "rgba(56,181,74,0.15)", color: "#38B54A" }}>Real Applications</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4 text-white">
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4 text-white">
               Organisations Transforming with AI
             </h2>
             <p className="text-base max-w-2xl mx-auto" style={{ color: "#aaa" }}>
@@ -622,10 +622,10 @@ export default function Enterprise() {
             <div>
               <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
                 style={{ background: "#f0faf0", color: "#38B54A" }}>Request a Consultation</span>
-              <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-5" style={{ color: "#1C1C1C" }}>
+              <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-5" style={{ color: "#1C1C1C" }}>
                 Explore AI Opportunities for Your Organisation
               </h2>
-              <p className="text-base leading-relaxed mb-6" style={{ color: "#555" }}>
+              <p className="text-lg leading-relaxed mb-6" style={{ color: "#555" }}>
                 Schedule a consultation to discuss how UpskillinTech can support your team.
                 During this discussion, we will understand your organisational goals,
                 identify potential AI opportunities, and recommend appropriate programmes or workshops.
@@ -788,9 +788,9 @@ export default function Enterprise() {
       </section>
 
       {/* ── Final CTA ────────────────────────────────────────────────────── */}
-      <section className="py-16" style={{ background: "linear-gradient(135deg, #38B54A 0%, #8B9E1A 60%, #E6B800 100%)" }}>
+      <section className="section-py" style={{ background: "linear-gradient(135deg, #38B54A 0%, #8B9E1A 60%, #E6B800 100%)" }}>
         <div className="max-w-4xl mx-auto px-4 text-center text-white">
-          <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4">
+          <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4">
             Ready to Build an AI-Enabled Organisation?
           </h2>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">

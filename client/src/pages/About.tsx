@@ -156,7 +156,7 @@ export default function About() {
             <div className="flex flex-wrap gap-8 justify-center text-center">
               {[{ v: "1,000+", l: "Professionals Trained" }, { v: "50+", l: "Organisations Engaged" }, { v: "2,500+", l: "Community Members" }, { v: "95%", l: "Satisfaction Rate" }].map(s => (
                 <div key={s.l}>
-                  <div className="text-xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{s.v}</div>
+                  <div className="text-2xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{s.v}</div>
                   <div className="text-xs font-medium" style={{ color: "rgba(0,0,0,0.65)" }}>{s.l}</div>
                 </div>
               ))}
@@ -166,12 +166,12 @@ export default function About() {
       </section>
 
       {/* ── 2. MISSION ──────────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "#fff" }}>
+      <section className="section-py" style={{ background: "#fff" }}>
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="section-label">Our Mission</span>
-              <h2 className="text-3xl lg:text-4xl font-bold mt-2 mb-6" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
+              <h2 className="text-4xl lg:text-5xl font-bold mt-2 mb-6" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
                 Bridging the Gap Between AI Awareness and AI Productivity
               </h2>
               <p className="text-lg leading-relaxed mb-6" style={{ color: "#4B5563" }}>
@@ -197,11 +197,11 @@ export default function About() {
       </section>
 
       {/* ── 3. FOUNDER ──────────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "#F7F8FA" }}>
+      <section className="section-py" style={{ background: "#F7F8FA" }}>
         <div className="container">
           <div className="text-center mb-14">
             <span className="section-label">Founder</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Meet Dr. Amaka Adiuku</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Meet Dr. Amaka Adiuku</h2>
           </div>
           <div className="grid lg:grid-cols-2 gap-14 items-start">
             {/* Left: Photo + credentials */}
@@ -228,7 +228,7 @@ export default function About() {
                   Founder & CEO
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-1" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Dr. Amaka Adiuku</h3>
+              <h3 className="text-2xl font-bold mb-1" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Dr. Amaka Adiuku</h3>
               <p className="text-sm mb-4" style={{ color: "#38B54A", fontFamily: "'Poppins', sans-serif" }}>Lecturer in AI | Robotics Researcher | Educator</p>
               <div className="flex flex-wrap gap-2">
                 {["AI Research", "Robotics", "Education", "Industry Collaboration"].map(tag => (
@@ -261,12 +261,12 @@ export default function About() {
       </section>
 
       {/* ── 4. VISION ───────────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "#1C1C1C" }}>
+      <section className="section-py" style={{ background: "#1C1C1C" }}>
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4" style={{ background: "rgba(56,181,74,0.15)", color: "#38B54A", border: "1px solid rgba(56,181,74,0.25)" }}>Our Vision</span>
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
+              <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
                 A World Where AI Empowers Every Professional
               </h2>
               <p className="text-lg leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.75)" }}>
@@ -294,11 +294,11 @@ export default function About() {
       </section>
 
       {/* ── 5. ECOSYSTEM ────────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "#fff" }}>
+      <section className="section-py" style={{ background: "#fff" }}>
         <div className="container">
           <div className="text-center mb-14">
             <span className="section-label">Platform Structure</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mt-2 mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>The UpskillinTech Ecosystem</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mt-2 mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>The UpskillinTech Ecosystem</h2>
             <p className="text-lg max-w-xl mx-auto" style={{ color: "#6B7280" }}>
               A four-stage journey from AI awareness to community — designed to take professionals from curious to capable.
             </p>
@@ -329,12 +329,12 @@ export default function About() {
       </section>
 
       {/* ── 6. PARTNERSHIPS ─────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "#F7F8FA" }}>
+      <section className="section-py" style={{ background: "#F7F8FA" }}>
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="section-label">Partnerships</span>
-              <h2 className="text-3xl lg:text-4xl font-bold mt-2 mb-6" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
+              <h2 className="text-4xl lg:text-5xl font-bold mt-2 mb-6" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
                 Collaborating to Advance AI Literacy
               </h2>
               <p className="text-lg leading-relaxed mb-6" style={{ color: "#4B5563" }}>
@@ -376,11 +376,11 @@ export default function About() {
       </section>
 
       {/* ── 7. IMPACT ───────────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #f7fef7 40%, #fffef0 100%)" }}>
+      <section className="section-py" style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #f7fef7 40%, #fffef0 100%)" }}>
         <div className="container">
           <div className="text-center mb-14">
             <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4" style={{ background: "rgba(255,255,255,0.20)", color: "#fff", border: "1px solid rgba(255,255,255,0.35)" }}>Our Impact</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
               Real Impact, Measurable Results
             </h2>
             <p className="text-lg max-w-xl mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>
@@ -417,10 +417,10 @@ export default function About() {
       </section>
 
       {/* ── 8. FINAL CTA ────────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "#1C1C1C" }}>
+      <section className="section-py" style={{ background: "#1C1C1C" }}>
         <div className="container max-w-3xl mx-auto text-center">
           <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5" style={{ background: "rgba(56,181,74,0.15)", color: "#38B54A", border: "1px solid rgba(56,181,74,0.25)" }}>Join the Journey</span>
-          <h2 className="text-3xl lg:text-4xl font-bold mb-5" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-5" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
             Join the UpskillinTech Journey
           </h2>
           <p className="text-lg mb-4 leading-relaxed" style={{ color: "rgba(255,255,255,0.75)" }}>

@@ -261,7 +261,7 @@ export default function Programs() {
           <div className="text-center mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "#f0faf0", color: "#38B54A" }}>Our Programmes</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4" style={{ color: "#1C1C1C" }}>
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4" style={{ color: "#1C1C1C" }}>
               Choose Your Learning Path
             </h2>
             <p className="text-base max-w-xl mx-auto" style={{ color: "#555" }}>
@@ -392,12 +392,12 @@ export default function Programs() {
       </section>
 
       {/* ── How It Works ─────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "#f8faf8" }}>
+      <section className="section-py" style={{ background: "#f8faf8" }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "#f0faf0", color: "#38B54A" }}>How It Works</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4" style={{ color: "#1C1C1C" }}>
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4" style={{ color: "#1C1C1C" }}>
               Your Path to AI Proficiency
             </h2>
             <p className="text-base max-w-xl mx-auto" style={{ color: "#555" }}>
@@ -435,12 +435,12 @@ export default function Programs() {
       </section>
 
       {/* ── Testimonials ─────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "#1C1C1C" }}>
+      <section className="section-py" style={{ background: "#1C1C1C" }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "rgba(56,181,74,0.2)", color: "#38B54A" }}>What Professionals Say</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4 text-white">
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4 text-white">
               Real Results from Real Professionals
             </h2>
           </div>
@@ -477,7 +477,7 @@ export default function Programs() {
           <div className="text-center mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "#f0faf0", color: "#38B54A" }}>FAQ</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4" style={{ color: "#1C1C1C" }}>
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4" style={{ color: "#1C1C1C" }}>
               Frequently Asked Questions
             </h2>
           </div>
@@ -507,7 +507,7 @@ export default function Programs() {
       </section>
 
       {/* ── Final CTA ────────────────────────────────────────────────────── */}
-      <section className="py-16"
+      <section className="section-py"
         style={{ background: "linear-gradient(135deg, #38B54A 0%, #8B9E1A 60%, #E6B800 100%)" }}>
         <div className="max-w-3xl mx-auto px-4 text-center text-white">
           <h2 className="font-poppins font-bold text-2xl lg:text-3xl mb-3">

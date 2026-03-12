@@ -139,7 +139,7 @@ export default function Resources() {
               ].map((item) => (
                 <div key={item.label} className="rounded-xl p-5 text-center" style={{ background: "rgba(255,255,255,0.92)", boxShadow: "0 4px 20px rgba(0,0,0,0.10)" }}>
                   <div className="flex justify-center mb-2">{item.icon}</div>
-                  <div className="text-2xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{item.count}</div>
+                  <div className="text-3xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{item.count}</div>
                   <div className="text-xs" style={{ color: "#6B7280" }}>{item.label}</div>
                 </div>
               ))}
@@ -152,7 +152,7 @@ export default function Resources() {
             <div className="flex flex-wrap justify-center gap-8 text-center">
               {[{ v: "40+", l: "Articles Published" }, { v: "12+", l: "AI Guides" }, { v: "20+", l: "Webinar Recordings" }, { v: "15+", l: "Workflow Templates" }].map(s => (
                 <div key={s.l}>
-                  <div className="text-xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{s.v}</div>
+                  <div className="text-2xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{s.v}</div>
                   <div className="text-xs font-medium" style={{ color: "rgba(0,0,0,0.65)" }}>{s.l}</div>
                 </div>
               ))}
@@ -162,11 +162,11 @@ export default function Resources() {
       </section>
 
       {/* ── 2. FEATURED RESOURCES ── */}
-      <section className="py-20" style={{ background: "#fff" }}>
+      <section className="section-py" style={{ background: "#fff" }}>
         <div className="container">
           <div className="text-center mb-12">
             <span className="section-label">Top Picks</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Featured Resources</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Featured Resources</h2>
             <p className="text-lg mt-3 max-w-xl mx-auto" style={{ color: "#6B7280" }}>Our highest-value guides and tools — free to access.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -176,7 +176,7 @@ export default function Resources() {
                   <div className="rounded-xl p-3" style={{ background: "#fff", boxShadow: "0 2px 8px rgba(0,0,0,0.08)" }}>{f.icon}</div>
                   <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ background: `${f.border}18`, color: f.border }}>{f.badge}</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{f.title}</h3>
+                <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{f.title}</h3>
                 <p className="text-sm leading-relaxed mb-6 flex-1" style={{ color: "#4B5563" }}>{f.desc}</p>
                 <Link href={f.href} className="inline-flex items-center gap-2 font-semibold text-sm" style={{ color: f.border }}>
                   {f.cta} <ChevronRight size={16} />
@@ -188,11 +188,11 @@ export default function Resources() {
       </section>
 
       {/* ── 3. BLOG ── */}
-      <section className="py-20" style={{ background: "#F7F8FA" }}>
+      <section className="section-py" style={{ background: "#F7F8FA" }}>
         <div className="container">
           <div className="text-center mb-12">
             <span className="section-label">Knowledge Base</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Blog</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Blog</h2>
             <p className="text-lg mt-3 max-w-xl mx-auto" style={{ color: "#6B7280" }}>Practical insights on how AI is transforming work, leadership, and innovation.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -216,12 +216,12 @@ export default function Resources() {
       </section>
 
       {/* ── 4. AI GUIDES ── */}
-      <section className="py-20" style={{ background: "#fff" }}>
+      <section className="section-py" style={{ background: "#fff" }}>
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="section-label">Learning Materials</span>
-              <h2 className="text-3xl lg:text-4xl font-bold mt-2 mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>AI Guides</h2>
+              <h2 className="text-4xl lg:text-5xl font-bold mt-2 mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>AI Guides</h2>
               <p className="text-lg mb-8" style={{ color: "#6B7280" }}>Practical guides designed to help individuals and organisations integrate AI into everyday activities — from prompts to productivity frameworks.</p>
               <div className="flex flex-col gap-4">
                 {AI_GUIDES.map((g) => (
@@ -245,7 +245,7 @@ export default function Resources() {
             </div>
             {/* Email capture */}
             <div className="rounded-2xl p-8" style={{ background: "linear-gradient(135deg, #8B9E1A 0%, #E6B800 100%)", boxShadow: "0 16px 48px rgba(139,158,26,0.25)" }}>
-              <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Get the Free AI Prompts Library</h3>
+              <h3 className="text-3xl font-bold mb-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Get the Free AI Prompts Library</h3>
               <p className="mb-6 text-sm" style={{ color: "rgba(0,0,0,0.70)" }}>50 prompts for research, writing, strategy, and decision-making — delivered straight to your inbox.</p>
               <form onSubmit={handleDownload} className="flex flex-col gap-3">
                 <input type="text" placeholder="Your Name" className="rounded-lg px-4 py-3 text-sm outline-none w-full" style={{ border: "none", color: "#1C1C1C" }} />
@@ -261,11 +261,11 @@ export default function Resources() {
       </section>
 
       {/* ── 5. CASE STUDIES ── */}
-      <section className="py-20" style={{ background: "#1C1C1C" }}>
+      <section className="section-py" style={{ background: "#1C1C1C" }}>
         <div className="container">
           <div className="text-center mb-12">
             <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-3" style={{ background: "rgba(230,184,0,0.15)", color: "#E6B800" }}>Real Impact</span>
-            <h2 className="text-3xl lg:text-4xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>Case Studies</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>Case Studies</h2>
             <p className="text-lg mt-3 max-w-xl mx-auto" style={{ color: "rgba(255,255,255,0.70)" }}>Real examples of how professionals, organisations, and ministries use AI to improve productivity.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -287,11 +287,11 @@ export default function Resources() {
       </section>
 
       {/* ── 6. WEBINARS ── */}
-      <section className="py-20" style={{ background: "#F7F8FA" }}>
+      <section className="section-py" style={{ background: "#F7F8FA" }}>
         <div className="container">
           <div className="text-center mb-12">
             <span className="section-label">Live &amp; Recorded</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Webinars</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Webinars</h2>
             <p className="text-lg mt-3 max-w-xl mx-auto" style={{ color: "#6B7280" }}>Learn from live and recorded sessions exploring practical AI applications.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 mb-10">
@@ -320,11 +320,11 @@ export default function Resources() {
       </section>
 
       {/* ── 7. AI WORKFLOW LIBRARY ── */}
-      <section className="py-20" style={{ background: "#fff" }}>
+      <section className="section-py" style={{ background: "#fff" }}>
         <div className="container">
           <div className="text-center mb-12">
             <span className="section-label">Practical Tools</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>AI Workflow Library</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>AI Workflow Library</h2>
             <p className="text-lg mt-3 max-w-xl mx-auto" style={{ color: "#6B7280" }}>Discover practical AI workflows used in real professional environments — ready to adapt and implement today.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -352,9 +352,9 @@ export default function Resources() {
       </section>
 
       {/* ── 8. SEARCH ── */}
-      <section className="py-16" style={{ background: "#F0FDF4" }}>
+      <section className="section-py" style={{ background: "#F0FDF4" }}>
         <div className="container max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-3" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Search Resources</h2>
+          <h2 className="text-2xl lg:text-4xl font-bold mb-3" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Search Resources</h2>
           <p className="mb-6" style={{ color: "#6B7280" }}>Find articles, guides, workflows, and webinars.</p>
           <form onSubmit={handleSearch} className="flex gap-3 mb-6">
             <input
@@ -381,11 +381,11 @@ export default function Resources() {
       </section>
 
       {/* ── 9. LEAD MAGNET ── */}
-      <section className="py-20" style={{ background: "#1C1C1C" }}>
+      <section className="section-py" style={{ background: "#1C1C1C" }}>
         <div className="container">
           <div className="max-w-3xl mx-auto rounded-2xl p-10 text-center" style={{ background: "linear-gradient(135deg, #38B54A 0%, #8B9E1A 60%, #E6B800 100%)" }}>
             <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4" style={{ background: "rgba(0,0,0,0.15)", color: "#fff" }}>Free Resource</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
               50 AI Prompts Every Professional Should Know
             </h2>
             <p className="text-lg mb-8" style={{ color: "rgba(255,255,255,0.90)" }}>
@@ -403,9 +403,9 @@ export default function Resources() {
       </section>
 
       {/* ── 10. FINAL CTA ── */}
-      <section className="py-20" style={{ background: "#F7F8FA" }}>
+      <section className="section-py" style={{ background: "#F7F8FA" }}>
         <div className="container text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
             Ready to Go Beyond Articles?
           </h2>
           <p className="text-lg mb-8" style={{ color: "#6B7280" }}>

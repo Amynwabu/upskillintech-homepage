@@ -188,12 +188,12 @@ export default function Contact() {
       </section>
 
       {/* ── Inquiry Categories ───────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "#f8faf8" }}>
+      <section className="section-py" style={{ background: "#f8faf8" }}>
         <div className="max-w-6xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "#f0faf0", color: "#38B54A" }}>How Can We Help?</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4" style={{ color: "#1C1C1C" }}>
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4" style={{ color: "#1C1C1C" }}>
               Select Your Inquiry Type
             </h2>
             <p className="text-base max-w-xl mx-auto" style={{ color: "#555" }}>
@@ -270,10 +270,10 @@ export default function Contact() {
             <div>
               <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
                 style={{ background: "#f0faf0", color: "#38B54A" }}>Send a Message</span>
-              <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-5" style={{ color: "#1C1C1C" }}>
+              <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-5" style={{ color: "#1C1C1C" }}>
                 We'd Love to Hear From You
               </h2>
-              <p className="text-base leading-relaxed mb-8" style={{ color: "#555" }}>
+              <p className="text-lg leading-relaxed mb-8" style={{ color: "#555" }}>
                 Use the form to share your inquiry and a member of the UpskillinTech
                 team will respond as soon as possible. We aim to respond to all
                 inquiries within 2 business days.
@@ -470,7 +470,7 @@ export default function Contact() {
       </section>
 
       {/* ── Alternative Contact ───────────────────────────────────────────── */}
-      <section className="py-16" style={{ background: "#f8faf8" }}>
+      <section className="section-py" style={{ background: "#f8faf8" }}>
         <div className="max-w-4xl mx-auto px-4 lg:px-8 text-center">
           <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
             style={{ background: "#f0faf0", color: "#38B54A" }}>Other Ways to Connect</span>

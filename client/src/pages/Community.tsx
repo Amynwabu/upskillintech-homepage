@@ -222,7 +222,7 @@ export default function Community() {
           <div className="text-center mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "#f0faf0", color: "#38B54A" }}>Community Benefits</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4" style={{ color: "#1C1C1C" }}>
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4" style={{ color: "#1C1C1C" }}>
               What You Get as a Member
             </h2>
             <p className="text-base max-w-xl mx-auto" style={{ color: "#555" }}>
@@ -251,12 +251,12 @@ export default function Community() {
       </section>
 
       {/* ── Masterclasses ────────────────────────────────────────────────── */}
-      <section id="masterclasses" className="py-20" style={{ background: "#f8faf8" }}>
+      <section id="masterclasses" className="section-py" style={{ background: "#f8faf8" }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-10">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "#f0faf0", color: "#38B54A" }}>Monthly Masterclasses</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4" style={{ color: "#1C1C1C" }}>
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4" style={{ color: "#1C1C1C" }}>
               Learn. Apply. Grow.
             </h2>
             <p className="text-base max-w-xl mx-auto mb-6" style={{ color: "#555" }}>
@@ -333,7 +333,7 @@ export default function Community() {
           <div className="text-center mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "#f0faf0", color: "#38B54A" }}>Events & Webinars</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4" style={{ color: "#1C1C1C" }}>
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4" style={{ color: "#1C1C1C" }}>
               Upcoming Events
             </h2>
             <p className="text-base max-w-xl mx-auto" style={{ color: "#555" }}>
@@ -373,12 +373,12 @@ export default function Community() {
       </section>
 
       {/* ── Testimonials ─────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "#1C1C1C" }}>
+      <section className="section-py" style={{ background: "#1C1C1C" }}>
         <div className="max-w-5xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block"
               style={{ background: "rgba(56,181,74,0.2)", color: "#38B54A" }}>Community Voices</span>
-            <h2 className="font-poppins font-bold text-3xl lg:text-4xl mb-4 text-white">
+            <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-4 text-white">
               What Members Are Saying
             </h2>
           </div>
@@ -411,7 +411,7 @@ export default function Community() {
       </section>
 
       {/* ── Join CTA ─────────────────────────────────────────────────────── */}
-      <section className="py-16"
+      <section className="section-py"
         style={{ background: "linear-gradient(135deg, #38B54A 0%, #8B9E1A 60%, #E6B800 100%)" }}>
         <div className="max-w-3xl mx-auto px-4 text-center text-white">
           <h2 className="font-poppins font-bold text-2xl lg:text-3xl mb-3">

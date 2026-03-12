@@ -1,49 +1,108 @@
 /**
- * ResourcesSection — UpskillinTech v2
- * White bg, 4 content cards with deep green (#8B9E1A) accent
+ * ResourcesSection — UpskillinTech v3
+ * White bg, 4 large content cards, richer descriptions, left border accent
  */
-import { BookOpen, FileText, BarChart2, Video } from "lucide-react";
+import { BookOpen, FileText, BarChart2, Video, ArrowRight } from "lucide-react";
 
 const resources = [
-  { icon: BookOpen, title: "Blog", desc: "AI insights and practical strategies.", color: "#8B9E1A" },
-  { icon: FileText, title: "AI Guides", desc: "Deep learning resources.", color: "#38B54A" },
-  { icon: BarChart2, title: "Case Studies", desc: "Real-world AI adoption stories.", color: "#8B9E1A" },
-  { icon: Video, title: "Webinars", desc: "Live sessions and training.", color: "#38B54A" },
+  {
+    icon: BookOpen,
+    color: "#38B54A",
+    bg: "rgba(56,181,74,0.10)",
+    title: "Blog",
+    desc: "Practical AI insights, how-to guides, and strategies for professionals ready to work smarter.",
+    count: "20+ Articles",
+    href: "/resources/blog",
+  },
+  {
+    icon: FileText,
+    color: "#8B9E1A",
+    bg: "rgba(139,158,26,0.10)",
+    title: "AI Guides",
+    desc: "Free downloadable guides covering AI tools, prompt engineering, and workflow automation.",
+    count: "4 Free Guides",
+    href: "/resources/ai-guides",
+  },
+  {
+    icon: BarChart2,
+    color: "#38B54A",
+    bg: "rgba(56,181,74,0.10)",
+    title: "Case Studies",
+    desc: "Real-world stories of professionals and organisations who transformed their work with AI.",
+    count: "6 Case Studies",
+    href: "/resources/case-studies",
+  },
+  {
+    icon: Video,
+    color: "#E6B800",
+    bg: "rgba(230,184,0,0.12)",
+    title: "Webinars",
+    desc: "Live training sessions and recorded masterclasses on AI productivity and strategy.",
+    count: "8 Sessions",
+    href: "/resources/webinars",
+  },
 ];
 
 export default function ResourcesSection() {
   return (
-    <section className="py-20" style={{ background: "#ffffff" }}>
+    <section className="section-py" style={{ background: "#ffffff" }}>
       <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
-            UpskillinTech Resources
+        {/* Header */}
+        <div className="text-center mb-14">
+          <span className="section-label mb-5">Free Resources</span>
+          <h2 className="mt-4 mb-5">
+            UpskillinTech <span style={{ color: "#38B54A" }}>Resources</span>
           </h2>
+          <p className="max-w-2xl mx-auto" style={{ fontSize: "1.15rem", color: "#6B7280" }}>
+            Everything you need to start, grow, and lead with AI — available free to the community.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 mb-12">
           {resources.map((r) => {
             const Icon = r.icon;
             return (
-              <div
+              <a
                 key={r.title}
-                className="rounded-xl p-6 transition-all duration-200"
-                style={{ background: "#ffffff", border: "1px solid #E5E7EB", borderLeft: `4px solid ${r.color}`, boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.transform = "translateY(-4px)"; (e.currentTarget as HTMLDivElement).style.boxShadow = "0 8px 24px rgba(11,94,52,0.15)"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLDivElement).style.boxShadow = "0 2px 12px rgba(0,0,0,0.06)"; }}
+                href={r.href}
+                className="rounded-2xl p-7 flex flex-col transition-all duration-200"
+                style={{
+                  background: "#ffffff",
+                  border: "1px solid #E5E7EB",
+                  borderLeft: `4px solid ${r.color}`,
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.07)",
+                  textDecoration: "none",
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(-5px)";
+                  (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 16px 48px rgba(56,181,74,0.14)";
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(0)";
+                  (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 4px 20px rgba(0,0,0,0.07)";
+                }}
               >
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: `${r.color}15` }}>
-                  <Icon size={22} style={{ color: r.color }} />
+                <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-5" style={{ background: r.bg }}>
+                  <Icon size={28} style={{ color: r.color }} />
                 </div>
-                <h3 className="font-bold mb-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{r.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#6B7280", fontFamily: "'Inter', sans-serif" }}>{r.desc}</p>
-              </div>
+                <div className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: r.color }}>
+                  {r.count}
+                </div>
+                <h3 className="mb-3" style={{ fontSize: "1.2rem" }}>{r.title}</h3>
+                <p className="mb-5 flex-1" style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "#6B7280" }}>{r.desc}</p>
+                <div className="flex items-center gap-1.5 font-semibold text-sm mt-auto" style={{ color: r.color, fontFamily: "'Poppins', sans-serif" }}>
+                  Explore <ArrowRight size={15} />
+                </div>
+              </a>
             );
           })}
         </div>
 
         <div className="text-center">
-          <a href="/resources" className="btn-primary">Explore Resources</a>
+          <a href="/resources" className="btn-primary" style={{ fontSize: "1.05rem", padding: "1rem 2.5rem" }}>
+            View All Resources
+          </a>
         </div>
       </div>
     </section>

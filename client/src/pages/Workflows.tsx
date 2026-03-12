@@ -187,7 +187,7 @@ export default function WorkflowsPage() {
             <div className="flex flex-wrap gap-8 justify-center text-center">
               {[{ v: "6", l: "Workflow Templates" }, { v: "24+", l: "Copy-Paste Prompts" }, { v: "5 min", l: "Fastest Workflow" }, { v: "Free", l: "All Workflows" }].map(s => (
                 <div key={s.l}>
-                  <div className="text-xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{s.v}</div>
+                  <div className="text-2xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{s.v}</div>
                   <div className="text-xs font-medium" style={{ color: "rgba(0,0,0,0.65)" }}>{s.l}</div>
                 </div>
               ))}
@@ -197,7 +197,7 @@ export default function WorkflowsPage() {
       </section>
 
       {/* Workflow Library */}
-      <section className="py-20" style={{ background: "#F7F8FA" }}>
+      <section className="section-py" style={{ background: "#F7F8FA" }}>
         <div className="container">
           {/* Filter */}
           <div className="flex flex-wrap gap-2 mb-12 justify-center">
@@ -230,7 +230,7 @@ export default function WorkflowsPage() {
                         <span className="text-xs font-bold uppercase tracking-wider px-2 py-1 rounded-full" style={{ background: `${wf.color}12`, color: wf.color }}>{wf.categoryLabel}</span>
                         <span className="text-xs px-2 py-1 rounded-full" style={{ background: "#F7F8FA", color: "#6B7280", border: "1px solid #E5E7EB" }}>{wf.difficulty}</span>
                       </div>
-                      <h3 className="text-xl font-bold mb-1" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{wf.title}</h3>
+                      <h3 className="text-2xl font-bold mb-1" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{wf.title}</h3>
                       <p className="text-sm" style={{ color: "#6B7280" }}>{wf.subtitle}</p>
                     </div>
                     <div className="flex flex-wrap gap-3 text-xs shrink-0" style={{ color: "#9CA3AF" }}>
@@ -340,9 +340,9 @@ export default function WorkflowsPage() {
       </section>
 
       {/* Download CTA */}
-      <section className="py-16" style={{ background: "#1C1C1C" }}>
+      <section className="section-py" style={{ background: "#1C1C1C" }}>
         <div className="container max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-3" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
+          <h2 className="text-2xl lg:text-4xl font-bold mb-3" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
             Get the Complete AI Workflow Playbook
           </h2>
           <p className="mb-6" style={{ color: "rgba(255,255,255,0.70)" }}>

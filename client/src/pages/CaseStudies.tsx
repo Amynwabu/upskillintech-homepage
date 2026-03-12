@@ -209,7 +209,7 @@ export default function CaseStudies() {
             <div className="flex flex-wrap gap-8 justify-center text-center">
               {METRICS.map(m => (
                 <div key={m.label}>
-                  <div className="text-xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{m.value}</div>
+                  <div className="text-2xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{m.value}</div>
                   <div className="text-xs font-medium" style={{ color: "rgba(0,0,0,0.65)" }}>{m.label}</div>
                 </div>
               ))}
@@ -219,7 +219,7 @@ export default function CaseStudies() {
       </section>
 
       {/* Filter + Case Studies */}
-      <section className="py-20" style={{ background: "#F7F8FA" }}>
+      <section className="section-py" style={{ background: "#F7F8FA" }}>
         <div className="container">
           {/* Filter */}
           <div className="flex flex-wrap gap-2 mb-12 justify-center">
@@ -262,7 +262,7 @@ export default function CaseStudies() {
 
                     {/* Right: Content */}
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-4 leading-snug" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{cs.headline}</h3>
+                      <h3 className="text-2xl font-bold mb-4 leading-snug" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{cs.headline}</h3>
 
                       {expanded === cs.id ? (
                         <div className="space-y-5">
@@ -327,9 +327,9 @@ export default function CaseStudies() {
       </section>
 
       {/* CTA */}
-      <section className="py-20" style={{ background: "#1C1C1C" }}>
+      <section className="section-py" style={{ background: "#1C1C1C" }}>
         <div className="container max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
+          <h2 className="text-4xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>
             Your Success Story Starts Here
           </h2>
           <p className="text-lg mb-8" style={{ color: "rgba(255,255,255,0.70)" }}>

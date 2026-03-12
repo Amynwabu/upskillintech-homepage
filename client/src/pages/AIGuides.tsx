@@ -182,7 +182,7 @@ export default function AIGuides() {
             <div className="flex flex-wrap gap-8 justify-center text-center">
               {[{ v: "4", l: "Free Guides" }, { v: "50+", l: "AI Prompts" }, { v: "100+", l: "Pages of Content" }, { v: "1,000+", l: "Downloads" }].map(s => (
                 <div key={s.l}>
-                  <div className="text-xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{s.v}</div>
+                  <div className="text-2xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{s.v}</div>
                   <div className="text-xs font-medium" style={{ color: "rgba(0,0,0,0.65)" }}>{s.l}</div>
                 </div>
               ))}
@@ -192,11 +192,11 @@ export default function AIGuides() {
       </section>
 
       {/* Guides Grid */}
-      <section className="py-20" style={{ background: "#fff" }}>
+      <section className="section-py" style={{ background: "#fff" }}>
         <div className="container">
           <div className="text-center mb-12">
             <span className="section-label">Free Downloads</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Download Your Free AI Guides</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Download Your Free AI Guides</h2>
             <p className="text-lg mt-3 max-w-xl mx-auto" style={{ color: "#6B7280" }}>Each guide is packed with practical frameworks, templates, and examples you can use immediately.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -206,7 +206,7 @@ export default function AIGuides() {
                   <div className="rounded-xl p-3" style={{ background: "#fff", boxShadow: "0 2px 8px rgba(0,0,0,0.08)" }}>{guide.icon}</div>
                   <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ background: `${guide.badgeColor}18`, color: guide.badgeColor }}>{guide.badge}</span>
                 </div>
-                <h3 className="text-xl font-bold mb-1" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{guide.title}</h3>
+                <h3 className="text-2xl font-bold mb-1" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{guide.title}</h3>
                 <p className="text-sm font-semibold mb-3" style={{ color: guide.border }}>{guide.subtitle}</p>
                 <p className="text-sm leading-relaxed mb-5" style={{ color: "#4B5563" }}>{guide.desc}</p>
                 <div className="flex gap-4 text-xs mb-5" style={{ color: "#6B7280" }}>
@@ -245,11 +245,11 @@ export default function AIGuides() {
       </section>
 
       {/* Prompt Library */}
-      <section className="py-20" style={{ background: "#F7F8FA" }}>
+      <section className="section-py" style={{ background: "#F7F8FA" }}>
         <div className="container">
           <div className="text-center mb-12">
             <span className="section-label">Prompt Library</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>50 AI Prompts — Browse & Copy</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>50 AI Prompts — Browse & Copy</h2>
             <p className="text-lg mt-3 max-w-xl mx-auto" style={{ color: "#6B7280" }}>Click any prompt to expand it, then copy and paste directly into your AI tool of choice.</p>
           </div>
           <div className="space-y-10">
@@ -306,9 +306,9 @@ export default function AIGuides() {
       </section>
 
       {/* CTA */}
-      <section className="py-16" style={{ background: "#1C1C1C" }}>
+      <section className="section-py" style={{ background: "#1C1C1C" }}>
         <div className="container max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-3" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>Ready to Go Deeper?</h2>
+          <h2 className="text-2xl lg:text-4xl font-bold mb-3" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>Ready to Go Deeper?</h2>
           <p className="mb-6" style={{ color: "rgba(255,255,255,0.70)" }}>Guides are a great start — but the AI-Enabled Professional Program takes you from reading about AI to actually using it in your work every day.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/#programs" className="inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-lg" style={{ background: "#E6B800", color: "#1C1C1C", fontFamily: "'Poppins', sans-serif" }}>

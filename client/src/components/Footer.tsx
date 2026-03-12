@@ -1,21 +1,22 @@
 /**
- * Footer — Navigation, social links, copyright
- * Design: Dark slate background, teal accent links
+ * Footer — UpskillinTech v3
+ * Dark #111827 background, larger text, bigger logo, green hover accents
  */
-
 import { Linkedin, Youtube, Instagram, Twitter } from "lucide-react";
+
+const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/upskillintech-logo-transparent-cropped-BzNYJKBMWcXVCyFbBhJqhL.webp";
 
 const footerLinks = {
   Programs: [
-    { label: "AI-Enabled Professional", href: "/programs#ai-enabled-professional" },
-    { label: "AI Foundations", href: "/programs#ai-foundations" },
-    { label: "AI Leadership", href: "/programs#ai-leadership" },
+    { label: "AI-Enabled Professional", href: "/programs" },
+    { label: "AI Foundations", href: "/programs" },
+    { label: "AI Leadership", href: "/programs" },
     { label: "Enterprise Training", href: "/enterprise" },
   ],
   Community: [
     { label: "Join Community", href: "/community" },
-    { label: "Events & Webinars", href: "/community#events" },
-    { label: "AI Masterclasses", href: "/community#masterclasses" },
+    { label: "Events & Webinars", href: "/community" },
+    { label: "AI Masterclasses", href: "/community" },
     { label: "Peer Network", href: "/community" },
   ],
   Resources: [
@@ -27,7 +28,7 @@ const footerLinks = {
   ],
   About: [
     { label: "About UpskillinTech", href: "/about" },
-    { label: "Our Approach", href: "#solution" },
+    { label: "Our Approach", href: "/about" },
     { label: "Contact Us", href: "/contact" },
     { label: "Careers", href: "#" },
   ],
@@ -42,21 +43,19 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer id="footer" style={{ background: "#1C1C1C" }}>
-      <div className="container mx-auto px-4 lg:px-8 max-w-7xl py-16">
-        {/* Top: Logo + Description + Social */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
-          {/* Brand */}
+    <footer id="footer" style={{ background: "#111827" }}>
+      <div className="container py-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-10 mb-14">
+          {/* Brand column */}
           <div className="lg:col-span-2 sm:col-span-2">
-            <div className="mb-4">
+            <div className="mb-5">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/upskillintech-logo-transparent-cropped_42de089d.png"
+                src={LOGO_URL}
                 alt="UpskillinTech"
-                className="h-10 w-auto object-contain"
-                style={{ height: "56px", maxWidth: "180px", filter: "brightness(0) invert(1)" }}
+                style={{ height: "64px", width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }}
               />
             </div>
-            <p className="text-sm mb-6 leading-relaxed" style={{ color: "rgba(255,255,255,0.50)", fontFamily: "'Inter', sans-serif" }}>
+            <p className="mb-7 leading-relaxed" style={{ fontSize: "0.975rem", color: "rgba(255,255,255,0.50)", lineHeight: 1.75 }}>
               Helping professionals become AI-enabled. Not just AI-aware — AI productive and AI transformed.
             </p>
             {/* Social Links */}
@@ -68,31 +67,48 @@ export default function Footer() {
                     key={s.label}
                     href={s.href}
                     aria-label={s.label}
-                    className="w-9 h-9 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110"
-                    style={{ background: "rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.55)" }}
-                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#ffffff"; (e.currentTarget as HTMLElement).style.background = "#38B54A"; }}
-                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.55)"; (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.08)"; }}
+                    className="flex items-center justify-center transition-all duration-200"
+                    style={{
+                      width: 42,
+                      height: 42,
+                      borderRadius: "0.625rem",
+                      background: "rgba(255,255,255,0.08)",
+                      color: "rgba(255,255,255,0.55)",
+                    }}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLElement).style.color = "#ffffff";
+                      (e.currentTarget as HTMLElement).style.background = "#38B54A";
+                      (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.55)";
+                      (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.08)";
+                      (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                    }}
                   >
-                    <Icon size={16} />
+                    <Icon size={18} />
                   </a>
                 );
               })}
             </div>
           </div>
 
-          {/* Links */}
+          {/* Link columns */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="font-bold text-sm mb-4" style={{ fontFamily: "'Poppins', sans-serif", color: "white" }}>
+              <h4
+                className="font-bold mb-5"
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "1rem", color: "#ffffff" }}
+              >
                 {category}
               </h4>
-              <ul className="space-y-2.5">
+              <ul className="flex flex-col gap-3">
                 {links.map((link) => (
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-sm transition-colors duration-200"
-                      style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'Inter', sans-serif" }}
+                      className="transition-colors duration-200"
+                      style={{ fontSize: "0.925rem", color: "rgba(255,255,255,0.45)", textDecoration: "none", lineHeight: 1.5 }}
                       onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#38B54A"; }}
                       onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.45)"; }}
                     >
@@ -106,8 +122,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4" style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-          <p className="text-sm" style={{ color: "rgba(255,255,255,0.35)", fontFamily: "'Inter', sans-serif" }}>
+        <div
+          className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+          style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
+        >
+          <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.35)" }}>
             © {new Date().getFullYear()} UpskillinTech. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
@@ -115,8 +134,8 @@ export default function Footer() {
               <a
                 key={item}
                 href="#"
-                className="text-xs transition-colors duration-200"
-                style={{ color: "rgba(255,255,255,0.30)", fontFamily: "'Inter', sans-serif" }}
+                className="transition-colors duration-200"
+                style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.30)", textDecoration: "none" }}
                 onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#38B54A"; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.30)"; }}
               >

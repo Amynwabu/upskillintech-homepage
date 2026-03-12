@@ -163,7 +163,7 @@ export default function Webinars() {
             <div className="flex flex-wrap gap-8 justify-center text-center">
               {[{ v: "8+", l: "Past Recordings" }, { v: "3", l: "Upcoming Sessions" }, { v: "4,000+", l: "Total Attendees" }, { v: "Free", l: "To Register" }].map(s => (
                 <div key={s.l}>
-                  <div className="text-xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{s.v}</div>
+                  <div className="text-2xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>{s.v}</div>
                   <div className="text-xs font-medium" style={{ color: "rgba(0,0,0,0.65)" }}>{s.l}</div>
                 </div>
               ))}
@@ -173,11 +173,11 @@ export default function Webinars() {
       </section>
 
       {/* Upcoming Webinars */}
-      <section className="py-20" style={{ background: "#fff" }}>
+      <section className="section-py" style={{ background: "#fff" }}>
         <div className="container">
           <div className="text-center mb-12">
             <span className="section-label">Register Now</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Upcoming Webinars</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Upcoming Webinars</h2>
             <p className="text-lg mt-3 max-w-xl mx-auto" style={{ color: "#6B7280" }}>Secure your spot for our next live sessions — all free to attend.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -227,11 +227,11 @@ export default function Webinars() {
       </section>
 
       {/* Past Recordings */}
-      <section className="py-20" style={{ background: "#F7F8FA" }}>
+      <section className="section-py" style={{ background: "#F7F8FA" }}>
         <div className="container">
           <div className="text-center mb-12">
             <span className="section-label">On Demand</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Past Webinar Recordings</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mt-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Past Webinar Recordings</h2>
             <p className="text-lg mt-3 max-w-xl mx-auto" style={{ color: "#6B7280" }}>Missed a session? Watch the recordings from our most popular webinars.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -269,9 +269,9 @@ export default function Webinars() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-16" style={{ background: "#1C1C1C" }}>
+      <section className="section-py" style={{ background: "#1C1C1C" }}>
         <div className="container max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-3" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>Never Miss a Webinar</h2>
+          <h2 className="text-2xl lg:text-4xl font-bold mb-3" style={{ fontFamily: "'Poppins', sans-serif", color: "#fff" }}>Never Miss a Webinar</h2>
           <p className="mb-6" style={{ color: "rgba(255,255,255,0.70)" }}>Get notified about upcoming sessions and receive recordings directly in your inbox.</p>
           <form onSubmit={(e) => { e.preventDefault(); toast.success("You're on the list!", { description: "We'll notify you about upcoming webinars." }); }} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-6">
             <input type="email" placeholder="your@email.com" className="flex-1 rounded-lg px-4 py-3 text-sm outline-none" style={{ border: "none", color: "#1C1C1C" }} />
