@@ -7,16 +7,16 @@ import { Linkedin, Youtube, Instagram, Twitter } from "lucide-react";
 
 const footerLinks = {
   Programs: [
-    { label: "AI-Enabled Professional", href: "#programs" },
-    { label: "AI for Business", href: "#programs" },
-    { label: "AI for Education", href: "#programs" },
+    { label: "AI-Enabled Professional", href: "/programs#ai-enabled-professional" },
+    { label: "AI Foundations", href: "/programs#ai-foundations" },
+    { label: "AI Leadership", href: "/programs#ai-leadership" },
     { label: "Enterprise Training", href: "/enterprise" },
   ],
   Community: [
-    { label: "Join Community", href: "#ecosystem" },
-    { label: "Events & Webinars", href: "#ecosystem" },
-    { label: "AI Masterclasses", href: "#ecosystem" },
-    { label: "Peer Network", href: "#ecosystem" },
+    { label: "Join Community", href: "/community" },
+    { label: "Events & Webinars", href: "/community#events" },
+    { label: "AI Masterclasses", href: "/community#masterclasses" },
+    { label: "Peer Network", href: "/community" },
   ],
   Resources: [
     { label: "Blog & Insights", href: "/resources/blog" },

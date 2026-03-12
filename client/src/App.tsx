@@ -14,6 +14,8 @@ import WorkflowsPage from "./pages/Workflows";
 import About from "./pages/About";
 import Enterprise from "./pages/Enterprise";
 import Contact from "./pages/Contact";
+import Programs from "./pages/Programs";
+import Community from "./pages/Community";
 
 
 function Router() {
@@ -29,6 +31,8 @@ function Router() {
       <Route path={"/about"} component={About} />
       <Route path={"/enterprise"} component={Enterprise} />
       <Route path={"/contact"} component={Contact} />
+      <Route path={"/programs"} component={Programs} />
+      <Route path={"/community"} component={Community} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

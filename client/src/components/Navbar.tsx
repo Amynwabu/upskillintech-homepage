@@ -19,9 +19,9 @@ const RESOURCE_LINKS = [
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Programs", href: "/#programs" },
+  { label: "Programs", href: "/programs" },
   { label: "Enterprise", href: "/enterprise" },
-  { label: "Community", href: "/#community" },
+  { label: "Community", href: "/community" },
   { label: "About", href: "/about" },
 ];
 
@@ -118,7 +118,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center">
-            <Link href="/#programs" className="btn-primary text-sm px-5 py-2.5">
+            <Link href="/programs" className="btn-primary text-sm px-5 py-2.5">
               Join Program
             </Link>
           </div>
@@ -162,7 +162,7 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-            <Link href="/#programs" className="btn-primary text-sm mt-2 text-center" onClick={() => setMenuOpen(false)}>
+            <Link href="/programs" className="btn-primary text-sm mt-2 text-center" onClick={() => setMenuOpen(false)}>
               Join Program
             </Link>
           </div>
