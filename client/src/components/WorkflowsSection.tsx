@@ -34,7 +34,7 @@ export default function WorkflowsSection() {
                   <div key={step} className="flex items-center gap-3">
                     <div
                       className="px-4 py-2 rounded-lg text-sm font-semibold text-white"
-                      style={{ background: "#38B54A", fontFamily: "'Poppins', sans-serif" }}
+                      style={{ background: "#021301", fontFamily: "'Poppins', sans-serif" }}
                     >
                       {step}
                     </div>

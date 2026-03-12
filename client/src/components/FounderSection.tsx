@@ -2,27 +2,20 @@
  * FounderSection — UpskillinTech v2
  * White background, split layout: photo left, bio right
  */
+const FOUNDER_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/founder-portrait-g2gj6Gs4zs3JeXJbWqWTy7.webp";
+
 export default function FounderSection() {
   return (
     <section className="py-20" style={{ background: "#ffffff" }}>
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-          {/* Left: Photo placeholder */}
+          {/* Left: Founder photo */}
           <div className="flex justify-center">
             <div
-              className="rounded-2xl overflow-hidden flex items-center justify-center"
-              style={{ width: 280, height: 320, background: "linear-gradient(135deg, #38B54A18, #E6B80018)", border: "2px solid #E6B80050" }}
+              className="rounded-2xl overflow-hidden"
+              style={{ maxWidth: 320, width: "100%", boxShadow: "0 16px 48px rgba(56,181,74,0.18)", border: "3px solid #E6B80040" }}
             >
-              <div className="text-center px-6">
-                <div
-                  className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold"
-                  style={{ background: "linear-gradient(135deg, #8B9E1A, #E6B800)", fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}
-                >
-                  DA
-                </div>
-                <div className="font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>Dr. Amaka Adiuku</div>
-                <div className="text-sm mt-1" style={{ color: "#6B7280", fontFamily: "'Inter', sans-serif" }}>Founder, UpskillinTech</div>
-              </div>
+              <img src={FOUNDER_IMG} alt="Dr. Amaka Adiuku, Founder of UpskillinTech" className="w-full h-auto" style={{ display: "block" }} />
             </div>
           </div>
 
@@ -36,7 +29,7 @@ export default function FounderSection() {
               Dr. Amaka Adiuku
             </p>
             <p className="text-sm mb-4" style={{ color: "#6B7280", fontFamily: "'Inter', sans-serif" }}>
-              AI Researcher | Robotics Specialist | Educator
+              Lecturer in AI | Robotics Researcher | Educator
             </p>
             <p className="text-base leading-relaxed mb-6" style={{ color: "#4B5563", fontFamily: "'Inter', sans-serif" }}>
               UpskillinTech combines AI research, industry collaboration, and practical workflow innovation to help professionals, organizations, and communities thrive in an AI-powered world.

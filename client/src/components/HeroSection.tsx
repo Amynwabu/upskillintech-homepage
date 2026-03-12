@@ -1,18 +1,18 @@
 /**
  * HeroSection — UpskillinTech v2
- * Background: linear-gradient #38B54A → #8B9E1A
+ * Background: light gradient #5EC96A → #A8C038 (lighter, airy)
  * Text: White | Primary CTA: white bg + green text | Secondary: outline white
  * Font: Poppins headings, Inter body
  */
 import { ArrowRight, Download } from "lucide-react";
 
-const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/hero-ai-illustration-v2-DTWbSY6GVJAfpr9jDrwUUR.webp";
+const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/hero-realistic-team-nun6Shd8E5rHXixQdtx7Wn.webp";
 
 export default function HeroSection() {
   return (
     <section
       className="relative overflow-hidden"
-      style={{ background: "linear-gradient(135deg, #38B54A 0%, #6B9E2A 50%, #8B9E1A 100%)" }}
+      style={{ background: "linear-gradient(135deg, #5EC96A 0%, #7BBF2A 50%, #A8C038 100%)" }}
     >
       {/* Decorative circles */}
       <div
@@ -88,7 +88,7 @@ export default function HeroSection() {
             >
               <img
                 src={HERO_IMG}
-                alt="AI workflow illustration with diverse professionals"
+                alt="Diverse professionals working with AI dashboards"
                 className="w-full h-auto"
                 style={{ display: "block" }}
               />

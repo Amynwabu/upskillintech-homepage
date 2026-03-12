@@ -4,7 +4,7 @@
  */
 import { CheckCircle } from "lucide-react";
 
-const ENTERPRISE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/enterprise-team-v2-aZoXmPod4boNqVvUisQdn4.webp";
+const ENTERPRISE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/enterprise-workshop-CLVZe5SRYXeFJ3Xsx9gvnV.webp";
 
 const benefits = [
   "Train teams in AI productivity",
@@ -43,7 +43,7 @@ export default function EnterpriseSection() {
               className="rounded-2xl overflow-hidden"
               style={{ maxWidth: 480, width: "100%", boxShadow: "0 16px 48px rgba(0,0,0,0.12)" }}
             >
-              <img src={ENTERPRISE_IMG} alt="Team using AI dashboard" className="w-full h-auto" style={{ display: "block" }} />
+              <img src={ENTERPRISE_IMG} alt="AI training workshop with diverse team" className="w-full h-auto" style={{ display: "block" }} />
             </div>
           </div>
         </div>

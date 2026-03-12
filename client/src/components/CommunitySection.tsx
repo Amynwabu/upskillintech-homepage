@@ -4,6 +4,8 @@
  */
 import { CheckCircle } from "lucide-react";
 
+const COMMUNITY_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/community-networking-foQRzPoSFZJMPVfXMtbbZA.webp";
+
 const benefits = ["Monthly masterclasses", "Workflow sharing", "Networking", "Events"];
 
 export default function CommunitySection() {
@@ -31,30 +33,13 @@ export default function CommunitySection() {
             <a href="#community" className="btn-primary">Join Community</a>
           </div>
 
-          {/* Right: Stats / highlight box */}
-          <div
-            className="rounded-2xl p-8"
-            style={{ background: "linear-gradient(135deg, #8B9E1A 0%, #E6B800 100%)", boxShadow: "0 16px 48px rgba(139,158,26,0.30)" }}
-          >
-            <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "'Poppins', sans-serif", color: "#1C1C1C" }}>
-              Stay Ahead in the AI Era
-            </h3>
-            <p className="mb-6" style={{ color: "rgba(0,0,0,0.70)", fontFamily: "'Inter', sans-serif" }}>
-              Subscribe to the UpskillinTech newsletter for AI insights, workflows, and strategies.
-            </p>
-            <div className="flex gap-3">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="flex-1 rounded-lg px-4 py-3 text-sm outline-none"
-                style={{ fontFamily: "'Inter', sans-serif", border: "none", color: "#1C1C1C" }}
-              />
-              <button
-                className="btn-yellow shrink-0"
-                style={{ padding: "0.75rem 1.25rem" }}
-              >
-                Subscribe
-              </button>
+          {/* Right: Community photo */}
+          <div className="flex justify-center lg:justify-end">
+            <div
+              className="rounded-2xl overflow-hidden"
+              style={{ maxWidth: 480, width: "100%", boxShadow: "0 16px 48px rgba(0,0,0,0.12)" }}
+            >
+              <img src={COMMUNITY_IMG} alt="Diverse professionals at a community networking event" className="w-full h-auto" style={{ display: "block" }} />
             </div>
           </div>
         </div>
