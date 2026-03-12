@@ -19,10 +19,11 @@ const footerLinks = {
     { label: "Peer Network", href: "#ecosystem" },
   ],
   Resources: [
-    { label: "Free AI Guide", href: "#lead-magnet" },
-    { label: "AI Workflow Templates", href: "#lead-magnet" },
-    { label: "Blog & Insights", href: "#" },
-    { label: "Research", href: "#" },
+    { label: "Blog & Insights", href: "/resources/blog" },
+    { label: "AI Guides", href: "/resources/ai-guides" },
+    { label: "Case Studies", href: "/resources/case-studies" },
+    { label: "Webinars", href: "/resources/webinars" },
+    { label: "AI Workflow Library", href: "/resources/workflows" },
   ],
   About: [
     { label: "About UpskillinTech", href: "#footer" },
