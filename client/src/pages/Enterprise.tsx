@@ -14,6 +14,7 @@ import {
   Mic, TrendingUp, Clock, BarChart3, Send, ChevronDown
 } from "lucide-react";
 import { toast } from "sonner";
+import { trpc } from "@/lib/trpc";
 
 // Animated counter hook
 function useCountUp(target: number, duration = 2000, start = false) {
@@ -256,21 +257,29 @@ export default function Enterprise() {
   const [form, setForm] = useState({
     name: "", email: "", organisation: "", role: "", inquiryType: "", message: "",
   });
-  const [submitting, setSubmitting] = useState(false);
   const [expandedService, setExpandedService] = useState<number | null>(null);
+  const consultMutation = trpc.forms.consultation.useMutation({
+    onSuccess: () => {
+      toast.success("Thank you! We'll be in touch within 2 business days.");
+      setForm({ name: "", email: "", organisation: "", role: "", inquiryType: "", message: "" });
+    },
+    onError: (err: { message?: string }) => toast.error(err.message || "Submission failed. Please try again."),
+  });
+  const submitting = consultMutation.isPending;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.name || !form.email || !form.organisation || !form.message) {
+    if (!form.name || !form.email || !form.organisation) {
       toast.error("Please fill in all required fields.");
       return;
     }
-    setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
-      toast.success("Thank you! We'll be in touch within 2 business days.");
-      setForm({ name: "", email: "", organisation: "", role: "", inquiryType: "", message: "" });
-    }, 1500);
+    consultMutation.mutate({
+      name: form.name,
+      email: form.email,
+      organisation: form.organisation,
+      role: form.role,
+      message: form.message,
+    });
   };
 
   return (

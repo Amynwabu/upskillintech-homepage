@@ -5,6 +5,7 @@
 import { useState } from "react";
 import { toast } from "sonner";
 import { Mail, CheckCircle } from "lucide-react";
+import { trpc } from "@/lib/trpc";
 
 const perks = [
   "Weekly AI tool reviews",
@@ -17,12 +18,19 @@ export default function NewsletterSection() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
+  const subscribeMutation = trpc.forms.subscribe.useMutation({
+    onSuccess: () => {
+      toast.success("You're subscribed! Check your inbox for a confirmation.");
+      setName("");
+      setEmail("");
+    },
+    onError: (err: { message?: string }) => toast.error(err.message || "Subscription failed. Please try again."),
+  });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    toast.success("You're subscribed! Check your inbox for a confirmation.");
-    setName("");
-    setEmail("");
+    subscribeMutation.mutate({ firstName: name, email });
   };
 
   return (

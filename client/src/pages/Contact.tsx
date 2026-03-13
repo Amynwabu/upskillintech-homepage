@@ -15,6 +15,7 @@ import {
   Twitter, Phone
 } from "lucide-react";
 import { toast } from "sonner";
+import { trpc } from "@/lib/trpc";
 
 const inquiryCategories = [
   {
@@ -99,8 +100,11 @@ export default function Contact() {
     inquiryType: "",
     message: "",
   });
-  const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const contactMutation = trpc.forms.contact.useMutation({
+    onSuccess: () => { setSubmitted(true); toast.success("Message sent! We'll be in touch soon."); },
+    onError: (err: { message?: string }) => toast.error(err.message || "Failed to send message. Please try again."),
+  });
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   const handleCategorySelect = (value: string) => {
@@ -112,18 +116,21 @@ export default function Contact() {
     }, 100);
   };
 
+  const submitting = contactMutation.isPending;
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) {
       toast.error("Please fill in your name, email, and message.");
       return;
     }
-    setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
-      setSubmitted(true);
-      toast.success("Message sent! We'll be in touch soon.");
-    }, 1500);
+    contactMutation.mutate({
+      name: form.name,
+      email: form.email,
+      organisation: form.organisation,
+      inquiryType: form.inquiryType || selectedCategory || "General Inquiry",
+      message: form.message,
+    });
   };
 
   return (

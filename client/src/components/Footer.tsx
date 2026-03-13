@@ -25,6 +25,7 @@ const footerLinks = {
     { label: "Case Studies", href: "/resources/case-studies" },
     { label: "Webinars", href: "/resources/webinars" },
     { label: "AI Workflow Library", href: "/resources/workflows" },
+    { label: "Newsletter", href: "/newsletter" },
   ],
   About: [
     { label: "About UpskillinTech", href: "/about" },

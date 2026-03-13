@@ -5,7 +5,7 @@
  */
 import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
-import { Menu, X, ChevronDown, BookOpen, FileText, Briefcase, Video, Zap } from "lucide-react";
+import { Menu, X, ChevronDown, BookOpen, FileText, Briefcase, Video, Zap, Mail } from "lucide-react";
 
 const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/upskillintech-logo-transparent-cropped-BzNYJKBMWcXVCyFbBhJqhL.webp";
 
@@ -15,6 +15,7 @@ const RESOURCE_LINKS = [
   { label: "Case Studies", desc: "Real results & stories", href: "/resources/case-studies", icon: <Briefcase size={18} style={{ color: "#38B54A" }} /> },
   { label: "Webinars", desc: "Live & recorded sessions", href: "/resources/webinars", icon: <Video size={18} style={{ color: "#E6B800" }} /> },
   { label: "AI Workflows", desc: "Step-by-step templates", href: "/resources/workflows", icon: <Zap size={18} style={{ color: "#8B9E1A" }} /> },
+  { label: "Newsletter", desc: "Weekly AI insights", href: "/newsletter", icon: <Mail size={18} style={{ color: "#E6B800" }} /> },
 ];
 
 const navLinks = [

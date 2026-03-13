@@ -1,5 +1,5 @@
 /**
- * Home — UpskillinTech v2
+ * Home — UpskillinTech v3
  * 13 sections: Navbar, Hero, Problem, Method, Programs, Workflows,
  *              Enterprise, Resources, Community, Founder, Newsletter, FinalCTA, Footer
  */
@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col" style={{ fontFamily: "'Inter', sans-serif" }}>
       <Navbar />
-      <main className="flex-1 pt-16">
+      <main className="flex-1 pt-[76px]">
         <HeroSection />
         <ProblemSection />
         <MethodSection />

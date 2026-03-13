@@ -16,9 +16,12 @@ import Enterprise from "./pages/Enterprise";
 import Contact from "./pages/Contact";
 import Programs from "./pages/Programs";
 import Community from "./pages/Community";
-
+import Newsletter from "./pages/Newsletter";
+import NewsletterArticle from "./pages/NewsletterArticle";
+import NewsletterArchive from "./pages/NewsletterArchive";
 
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />
@@ -33,6 +36,9 @@ function Router() {
       <Route path={"/contact"} component={Contact} />
       <Route path={"/programs"} component={Programs} />
       <Route path={"/community"} component={Community} />
+      <Route path={"/newsletter"} component={Newsletter} />
+      <Route path={"/newsletter/archive"} component={NewsletterArchive} />
+      <Route path={"/newsletter/:slug"} component={NewsletterArticle} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
