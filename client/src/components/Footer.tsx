@@ -4,7 +4,7 @@
  */
 import { Linkedin, Youtube, Instagram, Twitter } from "lucide-react";
 
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/upskillintech-logo-transparent-cropped-BzNYJKBMWcXVCyFbBhJqhL.webp";
+const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/93064684/acUjws9faR2fssir6ETEdK/upskillintech_logo_transparent_2bd795be.png";
 
 const footerLinks = {
   Programs: [
