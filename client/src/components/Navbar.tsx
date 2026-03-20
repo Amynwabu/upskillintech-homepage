@@ -162,9 +162,15 @@ export default function Navbar() {
           </div>
 
           {/* CTA */}
-          <div className="hidden md:flex items-center">
-            <Link href="/programs" className="btn-primary" style={{ fontSize: "0.95rem", padding: "0.75rem 1.75rem" }}>
-              Join Program
+          <div className="hidden md:flex items-center gap-3">
+            <Link href="/programs" style={{ fontFamily: "'Sora', sans-serif", fontSize: "0.9rem", fontWeight: 600, color: "#374151", textDecoration: "none" }}
+              onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#0D9488")}
+              onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#374151")}
+            >
+              Programs
+            </Link>
+            <Link href="/resources/blog" className="btn-primary" style={{ fontSize: "0.9rem", padding: "0.7rem 1.5rem", background: "#0D9488", boxShadow: "0 4px 14px rgba(13,148,136,0.25)" }}>
+              Free AI Insights
             </Link>
           </div>
 
@@ -224,8 +230,11 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-            <Link href="/programs" className="btn-primary mt-3 text-center justify-center" onClick={() => setMenuOpen(false)}>
-              Join Program
+            <Link href="/resources/blog" className="btn-primary mt-3 text-center justify-center" style={{ background: "#0D9488" }} onClick={() => setMenuOpen(false)}>
+              Free AI Insights
+            </Link>
+            <Link href="/programs" className="btn-outline mt-2 text-center justify-center" onClick={() => setMenuOpen(false)}>
+              View Programs
             </Link>
           </div>
         </div>
