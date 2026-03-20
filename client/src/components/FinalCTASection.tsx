@@ -102,7 +102,7 @@ export default function FinalCTASection() {
                 <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: "rgba(255,255,255,0.18)" }}>
                   <Icon size={18} style={{ color: "#E6B800" }} />
                 </div>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.975rem", fontWeight: 500, color: "rgba(255,255,255,0.90)" }}>
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.975rem", fontWeight: 500, color: "rgba(255,255,255,0.90)" }}>
                   {label}
                 </span>
               </div>

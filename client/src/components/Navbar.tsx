@@ -1,7 +1,7 @@
 /**
  * Navbar — UpskillinTech v3
  * Design: White bg, taller (72px), larger logo, bigger nav text, green CTA
- * Font: Poppins
+ * Font: Sora
  */
 import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
@@ -74,7 +74,7 @@ export default function Navbar() {
                 href={link.href}
                 className="font-semibold transition-colors duration-150"
                 style={{
-                  fontFamily: "'Poppins', sans-serif",
+                  fontFamily: "'Sora', sans-serif",
                   fontSize: "0.975rem",
                   color: "#111827",
                   textDecoration: "none",
@@ -92,7 +92,7 @@ export default function Navbar() {
               <button
                 className="flex items-center gap-1.5 font-semibold transition-colors duration-150"
                 style={{
-                  fontFamily: "'Poppins', sans-serif",
+                  fontFamily: "'Sora', sans-serif",
                   fontSize: "0.975rem",
                   color: resourcesOpen ? "#38B54A" : "#111827",
                   background: "none",
@@ -126,7 +126,7 @@ export default function Navbar() {
                       style={{
                         background: "linear-gradient(135deg, rgba(56,181,74,0.08), rgba(230,184,0,0.08))",
                         color: "#38B54A",
-                        fontFamily: "'Poppins', sans-serif",
+                        fontFamily: "'Sora', sans-serif",
                         fontSize: "0.95rem",
                         textDecoration: "none",
                       }}
@@ -148,7 +148,7 @@ export default function Navbar() {
                           {r.icon}
                         </div>
                         <div>
-                          <div className="font-semibold" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "0.9rem", color: "#111827" }}>
+                          <div className="font-semibold" style={{ fontFamily: "'Sora', sans-serif", fontSize: "0.9rem", color: "#111827" }}>
                             {r.label}
                           </div>
                           <div style={{ fontSize: "0.8rem", color: "#9CA3AF" }}>{r.desc}</div>
@@ -196,7 +196,7 @@ export default function Navbar() {
                 href={link.href}
                 className="font-semibold py-3 px-3 rounded-xl"
                 style={{
-                  fontFamily: "'Poppins', sans-serif",
+                  fontFamily: "'Sora', sans-serif",
                   fontSize: "1rem",
                   color: "#111827",
                   textDecoration: "none",

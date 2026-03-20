@@ -102,7 +102,7 @@ export default function Footer() {
             <div key={category}>
               <h4
                 className="font-bold mb-5"
-                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "1rem", color: "#ffffff" }}
+                style={{ fontFamily: "'Sora', sans-serif", fontSize: "1rem", color: "#ffffff" }}
               >
                 {category}
               </h4>
